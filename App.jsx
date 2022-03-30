@@ -7,28 +7,30 @@ import ClassicHome42 from "./components/ClassicHome42";
 import ClassicHome4 from "./components/ClassicHome4";
 import ClassicHome from "./components/ClassicHome";
 
-function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/:path(|classic-home)">
-          <ClassicHome22 {...classicHome22Data} />
-        </Route>
-        <Route path="/classic-home-1">
-          <ClassicHome32 {...classicHome32Data} />
-        </Route>
-        <Route path="/classic-home-2">
-          <ClassicHome42 {...classicHome42Data} />
-        </Route>
-        <Route path="/classic-home-3">
-          <ClassicHome4 {...classicHome4Data} />
-        </Route>
-        <Route path="/classic-home-4">
-          <ClassicHome {...classicHomeData} />
-        </Route>
-      </Switch>
-    </Router>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/:path(|classic-home)">
+            <ClassicHome22 {...classicHome22Data} />
+          </Route>
+          <Route path="/classic-home-1">
+            <ClassicHome32 {...classicHome32Data} />
+          </Route>
+          <Route path="/classic-home-2">
+            <ClassicHome42 {...classicHome42Data} />
+          </Route>
+          <Route path="/classic-home-3">
+            <ClassicHome4 {...classicHome4Data} />
+          </Route>
+          <Route path="/classic-home-4">
+            <ClassicHome {...classicHomeData} />
+          </Route>
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;

@@ -33797,26 +33797,66 @@ require("./ImageBlock.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ImageBlock(props) {
-  var imageAssetSmallSizeDefaultStateDefa = props.imageAssetSmallSizeDefaultStateDefa,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "image-block ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "image-assetsmallsize-defaultstatedefault",
-    style: {
-      backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ImageBlock = /*#__PURE__*/function (_React$Component) {
+  _inherits(ImageBlock, _React$Component);
+
+  var _super = _createSuper(ImageBlock);
+
+  function ImageBlock() {
+    _classCallCheck(this, ImageBlock);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ImageBlock, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          imageAssetSmallSizeDefaultStateDefa = _this$props.imageAssetSmallSizeDefaultStateDefa,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "image-block ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "image-assetsmallsize-defaultstatedefault",
+        style: {
+          backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+        }
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6 poppins-medium-old-lace-16px"
+      }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-1 poppins-normal-white-16px"
+      }, "Lorem ipsum dolor sit amet, consectetur ", /*#__PURE__*/_react.default.createElement("br", null), "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-2 poppins-medium-black-16px"
+      }, "Read More")));
     }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6 poppins-medium-old-lace-16px"
-  }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-1 poppins-normal-white-16px"
-  }, "Lorem ipsum dolor sit amet, consectetur ", /*#__PURE__*/_react.default.createElement("br", null), "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-2 poppins-medium-black-16px"
-  }, "Read More")));
-}
+  }]);
+
+  return ImageBlock;
+}(_react.default.Component);
 
 var _default = ImageBlock;
 exports.default = _default;
@@ -33841,29 +33881,69 @@ require("./FeaturedContent.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function FeaturedContent(props) {
-  var imageBlock1Props = props.imageBlock1Props,
-      imageBlock2Props = props.imageBlock2Props,
-      imageBlock3Props = props.imageBlock3Props;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-content"
-  }, /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock1Props.imageAssetSmallSizeDefaultStateDefa
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-col-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4-1 poppins-bold-old-lace-32px"
-  }, "Featured Products"), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-1",
-    src: "/img/line-1@1x.png"
-  }), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock2Props.imageAssetSmallSizeDefaultStateDefa,
-    className: imageBlock2Props.className
-  })), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock3Props.imageAssetSmallSizeDefaultStateDefa,
-    className: imageBlock3Props.className
-  }));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var FeaturedContent = /*#__PURE__*/function (_React$Component) {
+  _inherits(FeaturedContent, _React$Component);
+
+  var _super = _createSuper(FeaturedContent);
+
+  function FeaturedContent() {
+    _classCallCheck(this, FeaturedContent);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(FeaturedContent, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          imageBlock1Props = _this$props.imageBlock1Props,
+          imageBlock2Props = _this$props.imageBlock2Props,
+          imageBlock3Props = _this$props.imageBlock3Props;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-content"
+      }, /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock1Props.imageAssetSmallSizeDefaultStateDefa
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-col-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4-1 poppins-bold-old-lace-32px"
+      }, "Featured Products"), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-1",
+        src: "/img/line-1@1x.png"
+      }), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock2Props.imageAssetSmallSizeDefaultStateDefa,
+        className: imageBlock2Props.className
+      })), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock3Props.imageAssetSmallSizeDefaultStateDefa,
+        className: imageBlock3Props.className
+      }));
+    }
+  }]);
+
+  return FeaturedContent;
+}(_react.default.Component);
 
 var _default = FeaturedContent;
 exports.default = _default;
@@ -33886,23 +33966,62 @@ require("./Hero.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Hero(props) {
-  var hero = props.hero;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "hero",
-    style: {
-      backgroundImage: "url(".concat(hero, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Hero = /*#__PURE__*/function (_React$Component) {
+  _inherits(Hero, _React$Component);
+
+  var _super = _createSuper(Hero);
+
+  function Hero() {
+    _classCallCheck(this, Hero);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Hero, [{
+    key: "render",
+    value: function render() {
+      var hero = this.props.hero;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "hero",
+        style: {
+          backgroundImage: "url(".concat(hero, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "lorem-ipsum-dolor-si-1 poppins-bold-beeswax-56px"
+      }, "Design is the silent ambassador of your brand"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "hero-text poppins-medium-old-lace-16px"
+      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-3 poppins-medium-black-16px"
+      }, "Contact")));
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "lorem-ipsum-dolor-si-1 poppins-bold-beeswax-56px"
-  }, "Design is the silent ambassador of your brand"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "hero-text poppins-medium-old-lace-16px"
-  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-3 poppins-medium-black-16px"
-  }, "Contact")));
-}
+  }]);
+
+  return Hero;
+}(_react.default.Component);
 
 var _default = Hero;
 exports.default = _default;
@@ -33925,17 +34044,56 @@ require("./TabItemSTATEDEFAULT.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function TabItemSTATEDEFAULT() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-1"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-4 poppins-medium-celeste-16px"
-  }, "Product")));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var TabItemSTATEDEFAULT = /*#__PURE__*/function (_React$Component) {
+  _inherits(TabItemSTATEDEFAULT, _React$Component);
+
+  var _super = _createSuper(TabItemSTATEDEFAULT);
+
+  function TabItemSTATEDEFAULT() {
+    _classCallCheck(this, TabItemSTATEDEFAULT);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(TabItemSTATEDEFAULT, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-1"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-4 poppins-medium-celeste-16px"
+      }, "Product")));
+    }
+  }]);
+
+  return TabItemSTATEDEFAULT;
+}(_react.default.Component);
 
 var _default = TabItemSTATEDEFAULT;
 exports.default = _default;
@@ -33958,13 +34116,52 @@ require("./Area.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Area() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "bar-statedefault border-1px-beeswax"
-  }));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Area = /*#__PURE__*/function (_React$Component) {
+  _inherits(Area, _React$Component);
+
+  var _super = _createSuper(Area);
+
+  function Area() {
+    _classCallCheck(this, Area);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Area, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "bar-statedefault border-1px-beeswax"
+      }));
+    }
+  }]);
+
+  return Area;
+}(_react.default.Component);
 
 var _default = Area;
 exports.default = _default;
@@ -33987,17 +34184,56 @@ require("./TabItemSTATEDEFAULT2.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function TabItemSTATEDEFAULT2() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-3"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-5 poppins-medium-celeste-16px"
-  }, "About")));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var TabItemSTATEDEFAULT2 = /*#__PURE__*/function (_React$Component) {
+  _inherits(TabItemSTATEDEFAULT2, _React$Component);
+
+  var _super = _createSuper(TabItemSTATEDEFAULT2);
+
+  function TabItemSTATEDEFAULT2() {
+    _classCallCheck(this, TabItemSTATEDEFAULT2);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(TabItemSTATEDEFAULT2, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-3"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-5 poppins-medium-celeste-16px"
+      }, "About")));
+    }
+  }]);
+
+  return TabItemSTATEDEFAULT2;
+}(_react.default.Component);
 
 var _default = TabItemSTATEDEFAULT2;
 exports.default = _default;
@@ -34020,17 +34256,56 @@ require("./TabItemSTATEDEFAULT3.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function TabItemSTATEDEFAULT3() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-4"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-6 poppins-medium-celeste-16px"
-  }, "Support")));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var TabItemSTATEDEFAULT3 = /*#__PURE__*/function (_React$Component) {
+  _inherits(TabItemSTATEDEFAULT3, _React$Component);
+
+  var _super = _createSuper(TabItemSTATEDEFAULT3);
+
+  function TabItemSTATEDEFAULT3() {
+    _classCallCheck(this, TabItemSTATEDEFAULT3);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(TabItemSTATEDEFAULT3, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-4"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-6 poppins-medium-celeste-16px"
+      }, "Support")));
+    }
+  }]);
+
+  return TabItemSTATEDEFAULT3;
+}(_react.default.Component);
 
 var _default = TabItemSTATEDEFAULT3;
 exports.default = _default;
@@ -34053,16 +34328,55 @@ require("./IconICONfeathersearchSIZELARGESTYLE.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function IconICONfeathersearchSIZELARGESTYLE() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeathersear"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-6 border-2-7px-old-lace"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "a05dc37f-4d7e-4e27-97af-ac3c219da6b5",
-    src: "/img/66afca6b-4883-4a7f-8658-8c30ca4617fe@1x.png"
-  })));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var IconICONfeathersearchSIZELARGESTYLE = /*#__PURE__*/function (_React$Component) {
+  _inherits(IconICONfeathersearchSIZELARGESTYLE, _React$Component);
+
+  var _super = _createSuper(IconICONfeathersearchSIZELARGESTYLE);
+
+  function IconICONfeathersearchSIZELARGESTYLE() {
+    _classCallCheck(this, IconICONfeathersearchSIZELARGESTYLE);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(IconICONfeathersearchSIZELARGESTYLE, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeathersear"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-6 border-2-7px-old-lace"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "a05dc37f-4d7e-4e27-97af-ac3c219da6b5",
+        src: "/img/66afca6b-4883-4a7f-8658-8c30ca4617fe@1x.png"
+      })));
+    }
+  }]);
+
+  return IconICONfeathersearchSIZELARGESTYLE;
+}(_react.default.Component);
 
 var _default = IconICONfeathersearchSIZELARGESTYLE;
 exports.default = _default;
@@ -34085,13 +34399,52 @@ require("./ButtonDISPLAYELEMENTSLabelSIZEMEDIU.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ButtonDISPLAYELEMENTSLabelSIZEMEDIU() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-7 poppins-medium-black-16px"
-  }, "Contact"));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ButtonDISPLAYELEMENTSLabelSIZEMEDIU = /*#__PURE__*/function (_React$Component) {
+  _inherits(ButtonDISPLAYELEMENTSLabelSIZEMEDIU, _React$Component);
+
+  var _super = _createSuper(ButtonDISPLAYELEMENTSLabelSIZEMEDIU);
+
+  function ButtonDISPLAYELEMENTSLabelSIZEMEDIU() {
+    _classCallCheck(this, ButtonDISPLAYELEMENTSLabelSIZEMEDIU);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ButtonDISPLAYELEMENTSLabelSIZEMEDIU, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-7 poppins-medium-black-16px"
+      }, "Contact"));
+    }
+  }]);
+
+  return ButtonDISPLAYELEMENTSLabelSIZEMEDIU;
+}(_react.default.Component);
 
 var _default = ButtonDISPLAYELEMENTSLabelSIZEMEDIU;
 exports.default = _default;
@@ -34114,24 +34467,63 @@ require("./Video.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Video() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "video"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4-2 poppins-bold-old-lace-32px"
-  }, "Product Spotlight"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-3 poppins-medium-old-lace-16px"
-  }, "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherplay"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-7"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x94de9112-46f0-4b8b-a4d7-36be86602109",
-    src: "/img/e5b5c0f0-0dc3-4718-a366-755de7e05038@1x.png"
-  })))));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Video = /*#__PURE__*/function (_React$Component) {
+  _inherits(Video, _React$Component);
+
+  var _super = _createSuper(Video);
+
+  function Video() {
+    _classCallCheck(this, Video);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Video, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "video"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4-2 poppins-bold-old-lace-32px"
+      }, "Product Spotlight"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-3 poppins-medium-old-lace-16px"
+      }, "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherplay"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-7"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x94de9112-46f0-4b8b-a4d7-36be86602109",
+        src: "/img/e5b5c0f0-0dc3-4718-a366-755de7e05038@1x.png"
+      })))));
+    }
+  }]);
+
+  return Video;
+}(_react.default.Component);
 
 var _default = Video;
 exports.default = _default;
@@ -34154,14 +34546,53 @@ require("./ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ButtonDISPLAYELEMENTSLabelSIZEMEDIU2(props) {
-  var className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-5 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-8 poppins-medium-black-16px"
-  }, "Read More"));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ButtonDISPLAYELEMENTSLabelSIZEMEDIU2 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ButtonDISPLAYELEMENTSLabelSIZEMEDIU2, _React$Component);
+
+  var _super = _createSuper(ButtonDISPLAYELEMENTSLabelSIZEMEDIU2);
+
+  function ButtonDISPLAYELEMENTSLabelSIZEMEDIU2() {
+    _classCallCheck(this, ButtonDISPLAYELEMENTSLabelSIZEMEDIU2);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ButtonDISPLAYELEMENTSLabelSIZEMEDIU2, [{
+    key: "render",
+    value: function render() {
+      var className = this.props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-5 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-8 poppins-medium-black-16px"
+      }, "Read More"));
+    }
+  }]);
+
+  return ButtonDISPLAYELEMENTSLabelSIZEMEDIU2;
+}(_react.default.Component);
 
 var _default = ButtonDISPLAYELEMENTSLabelSIZEMEDIU2;
 exports.default = _default;
@@ -34184,27 +34615,67 @@ require("./CircleButtonSIZELARGESTATEDEFAULTST.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function CircleButtonSIZELARGESTATEDEFAULTST(props) {
-  var x8A145B4607554D079Cf68833E2Be6E4E = props.x8A145B4607554D079Cf68833E2Be6E4E,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-2 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatheranch"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-8"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "x4a6c94fa-bab7-4ffe-81f3-fb5fd820a20a border-2-4px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x04d47d4b-ccbf-4ab9-90d4-ba345f3c4795",
-    src: "/img/90c99dfb-b290-48dc-a01b-69395b923925@1x.png"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "d7e55bb1-6b70-409a-9981-4b7e759e4518",
-    src: x8A145B4607554D079Cf68833E2Be6E4E
-  })))));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var CircleButtonSIZELARGESTATEDEFAULTST = /*#__PURE__*/function (_React$Component) {
+  _inherits(CircleButtonSIZELARGESTATEDEFAULTST, _React$Component);
+
+  var _super = _createSuper(CircleButtonSIZELARGESTATEDEFAULTST);
+
+  function CircleButtonSIZELARGESTATEDEFAULTST() {
+    _classCallCheck(this, CircleButtonSIZELARGESTATEDEFAULTST);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(CircleButtonSIZELARGESTATEDEFAULTST, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          x8A145B4607554D079Cf68833E2Be6E4E = _this$props.x8A145B4607554D079Cf68833E2Be6E4E,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-2 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatheranch"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-8"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "x4a6c94fa-bab7-4ffe-81f3-fb5fd820a20a border-2-4px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x04d47d4b-ccbf-4ab9-90d4-ba345f3c4795",
+        src: "/img/90c99dfb-b290-48dc-a01b-69395b923925@1x.png"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "d7e55bb1-6b70-409a-9981-4b7e759e4518",
+        src: x8A145B4607554D079Cf68833E2Be6E4E
+      })))));
+    }
+  }]);
+
+  return CircleButtonSIZELARGESTATEDEFAULTST;
+}(_react.default.Component);
 
 var _default = CircleButtonSIZELARGESTATEDEFAULTST;
 exports.default = _default;
@@ -34227,25 +34698,65 @@ require("./CircleButtonSIZELARGESTATEDEFAULTST2.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function CircleButtonSIZELARGESTATEDEFAULTST2(props) {
-  var x2281B8E498B74370B56907Def5F21A66 = props.x2281B8E498B74370B56907Def5F21A66,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-4 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherflag"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-9"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-5"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x986106ac-0ab9-497e-a674-dac399d729ed",
-    src: x2281B8E498B74370B56907Def5F21A66
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x1d7ad06b-4cac-4960-899b-406511470f66",
-    src: "/img/725847c9-8b93-42b6-8414-4bcfdb5c4b55@1x.png"
-  })))));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var CircleButtonSIZELARGESTATEDEFAULTST2 = /*#__PURE__*/function (_React$Component) {
+  _inherits(CircleButtonSIZELARGESTATEDEFAULTST2, _React$Component);
+
+  var _super = _createSuper(CircleButtonSIZELARGESTATEDEFAULTST2);
+
+  function CircleButtonSIZELARGESTATEDEFAULTST2() {
+    _classCallCheck(this, CircleButtonSIZELARGESTATEDEFAULTST2);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(CircleButtonSIZELARGESTATEDEFAULTST2, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          x2281B8E498B74370B56907Def5F21A66 = _this$props.x2281B8E498B74370B56907Def5F21A66,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-4 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherflag"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-9"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-5"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x986106ac-0ab9-497e-a674-dac399d729ed",
+        src: x2281B8E498B74370B56907Def5F21A66
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x1d7ad06b-4cac-4960-899b-406511470f66",
+        src: "/img/725847c9-8b93-42b6-8414-4bcfdb5c4b55@1x.png"
+      })))));
+    }
+  }]);
+
+  return CircleButtonSIZELARGESTATEDEFAULTST2;
+}(_react.default.Component);
 
 var _default = CircleButtonSIZELARGESTATEDEFAULTST2;
 exports.default = _default;
@@ -34268,25 +34779,64 @@ require("./Newsletter.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Newsletter() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "newsletter"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "newsletter-tagh4 poppins-bold-old-lace-32px"
-  }, "Newsletter"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "duis-aute-irure-dolo poppins-medium-old-lace-16px"
-  }, "Duis aute irure dolor in reprehenderit in voluptate velit."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "display_elements-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "input-display_elemen"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "value poppins-medium-black-16px"
-  }, "Your email")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-10 poppins-medium-black-16px"
-  }, "Subscribe"))));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Newsletter = /*#__PURE__*/function (_React$Component) {
+  _inherits(Newsletter, _React$Component);
+
+  var _super = _createSuper(Newsletter);
+
+  function Newsletter() {
+    _classCallCheck(this, Newsletter);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Newsletter, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "newsletter"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "newsletter-tagh4 poppins-bold-old-lace-32px"
+      }, "Newsletter"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "duis-aute-irure-dolo poppins-medium-old-lace-16px"
+      }, "Duis aute irure dolor in reprehenderit in voluptate velit."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "display_elements-container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "input-display_elemen"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "value poppins-medium-black-16px"
+      }, "Your email")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-10 poppins-medium-black-16px"
+      }, "Subscribe"))));
+    }
+  }]);
+
+  return Newsletter;
+}(_react.default.Component);
 
 var _default = Newsletter;
 exports.default = _default;
@@ -34309,19 +34859,58 @@ require("./FooterStrip.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function FooterStrip() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-strip"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "st-container poppinssemibold-regular-semi-bold-black-13px"
-  }, /*#__PURE__*/_react.default.createElement("p", {
-    className: "copyright-stylestyle2tagui_s"
-  }, "\xA9 2020 Mockup.\xA0\xA0All Rights Reserved."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "privacy-policy-stylestyle2tagui_s"
-  }, "Privacy Policy"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "terms-of-service-st"
-  }, "Terms of Service")));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var FooterStrip = /*#__PURE__*/function (_React$Component) {
+  _inherits(FooterStrip, _React$Component);
+
+  var _super = _createSuper(FooterStrip);
+
+  function FooterStrip() {
+    _classCallCheck(this, FooterStrip);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(FooterStrip, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer-strip"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "st-container poppinssemibold-regular-semi-bold-black-13px"
+      }, /*#__PURE__*/_react.default.createElement("p", {
+        className: "copyright-stylestyle2tagui_s"
+      }, "\xA9 2020 Mockup.\xA0\xA0All Rights Reserved."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "privacy-policy-stylestyle2tagui_s"
+      }, "Privacy Policy"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "terms-of-service-st"
+      }, "Terms of Service")));
+    }
+  }]);
+
+  return FooterStrip;
+}(_react.default.Component);
 
 var _default = FooterStrip;
 exports.default = _default;
@@ -34372,253 +34961,293 @@ require("./ClassicHome22.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ClassicHome22(props) {
-  var titleTagH6 = props.titleTagH6,
-      label1 = props.label1,
-      label2 = props.label2,
-      promotionBox = props.promotionBox,
-      loremIpsumDolorSi = props.loremIpsumDolorSi,
-      weBelieveThatPaym = props.weBelieveThatPaym,
-      h6TagH4 = props.h6TagH4,
-      line = props.line,
-      h6TagH51 = props.h6TagH51,
-      h6TagP1 = props.h6TagP1,
-      h6TagH52 = props.h6TagH52,
-      h6TagP2 = props.h6TagP2,
-      a230Cb3DE70048A5A760C060353Cfdfa = props.a230Cb3DE70048A5A760C060353Cfdfa,
-      h6TagH53 = props.h6TagH53,
-      h6TagP3 = props.h6TagP3,
-      companyStyleStyle3TagH4 = props.companyStyleStyle3TagH4,
-      descriptionStyleStyle3TagP = props.descriptionStyleStyle3TagP,
-      x35Fedd9C5Bbc449B91D15Ce70336A6B0 = props.x35Fedd9C5Bbc449B91D15Ce70336A6B0,
-      f582668EF9B64Daa9F4058B68Ac4Bee1 = props.f582668EF9B64Daa9F4058B68Ac4Bee1,
-      d90E54Ec6Bd24Ff19C20Bcb6C571D34B = props.d90E54Ec6Bd24Ff19C20Bcb6C571D34B,
-      overlapGroup = props.overlapGroup,
-      x96C0Dd6BF6De41Cc92Cf975Ee038F9D5 = props.x96C0Dd6BF6De41Cc92Cf975Ee038F9D5,
-      x96Bf38A78B0B4EbdAa2AD894711F81E1 = props.x96Bf38A78B0B4EbdAa2AD894711F81E1,
-      productsStyleStyle3TagH5 = props.productsStyleStyle3TagH5,
-      productStyleStyle3TagUi_L1 = props.productStyleStyle3TagUi_L1,
-      productStyleStyle3TagUi_L2 = props.productStyleStyle3TagUi_L2,
-      productStyleStyle3TagUi_L3 = props.productStyleStyle3TagUi_L3,
-      productStyleStyle3TagUi_L4 = props.productStyleStyle3TagUi_L4,
-      servicesStyleStyle3TagH5 = props.servicesStyleStyle3TagH5,
-      serviceStyleStyle3TagUi_L1 = props.serviceStyleStyle3TagUi_L1,
-      serviceStyleStyle3TagUi_L2 = props.serviceStyleStyle3TagUi_L2,
-      serviceStyleStyle3TagUi_L3 = props.serviceStyleStyle3TagUi_L3,
-      serviceStyleStyle3TagUi_L4 = props.serviceStyleStyle3TagUi_L4,
-      resourcesStyleStyle3TagH5 = props.resourcesStyleStyle3TagH5,
-      resourceStyleStyle3TagUi_L1 = props.resourceStyleStyle3TagUi_L1,
-      resourceStyleStyle3TagUi_L2 = props.resourceStyleStyle3TagUi_L2,
-      resourceStyleStyle3TagUi_L3 = props.resourceStyleStyle3TagUi_L3,
-      resourceStyleStyle3TagUi_L4 = props.resourceStyleStyle3TagUi_L4,
-      featuredContentProps = props.featuredContentProps,
-      heroProps = props.heroProps,
-      circleButtonSIZELARGESTATEDEFAULTST = props.circleButtonSIZELARGESTATEDEFAULTST,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU,
-      circleButtonSIZELARGESTATEDEFAULTST2 = props.circleButtonSIZELARGESTATEDEFAULTST2,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU2 = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU2,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU3 = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU3;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container-center-horizontal"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "classic-home screen"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group7"
-  }, /*#__PURE__*/_react.default.createElement(_FeaturedContent.default, {
-    imageBlock1Props: featuredContentProps.imageBlock1Props,
-    imageBlock2Props: featuredContentProps.imageBlock2Props,
-    imageBlock3Props: featuredContentProps.imageBlock3Props
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group5"
-  }, /*#__PURE__*/_react.default.createElement(_Hero.default, {
-    hero: heroProps.hero
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "header"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-tagh6"
-  }, titleTagH6), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tabs"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-stateactive"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label poppins-medium-celeste-16px"
-  }, label1))), /*#__PURE__*/_react.default.createElement(_TabItemSTATEDEFAULT.default, null), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group"
-  }, /*#__PURE__*/_react.default.createElement(_Area.default, null), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-1"
-  }, label2))), /*#__PURE__*/_react.default.createElement(_TabItemSTATEDEFAULT2.default, null), /*#__PURE__*/_react.default.createElement(_TabItemSTATEDEFAULT3.default, null)), /*#__PURE__*/_react.default.createElement(_IconICONfeathersearchSIZELARGESTYLE.default, null), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)))), /*#__PURE__*/_react.default.createElement(_Video.default, null), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tion-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "promotion-box",
-    style: {
-      backgroundImage: "url(".concat(promotionBox, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ClassicHome22 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ClassicHome22, _React$Component);
+
+  var _super = _createSuper(ClassicHome22);
+
+  function ClassicHome22() {
+    _classCallCheck(this, ClassicHome22);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ClassicHome22, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          titleTagH6 = _this$props.titleTagH6,
+          label1 = _this$props.label1,
+          label2 = _this$props.label2,
+          promotionBox = _this$props.promotionBox,
+          loremIpsumDolorSi = _this$props.loremIpsumDolorSi,
+          weBelieveThatPaym = _this$props.weBelieveThatPaym,
+          h6TagH4 = _this$props.h6TagH4,
+          line = _this$props.line,
+          h6TagH51 = _this$props.h6TagH51,
+          h6TagP1 = _this$props.h6TagP1,
+          h6TagH52 = _this$props.h6TagH52,
+          h6TagP2 = _this$props.h6TagP2,
+          a230Cb3DE70048A5A760C060353Cfdfa = _this$props.a230Cb3DE70048A5A760C060353Cfdfa,
+          h6TagH53 = _this$props.h6TagH53,
+          h6TagP3 = _this$props.h6TagP3,
+          companyStyleStyle3TagH4 = _this$props.companyStyleStyle3TagH4,
+          descriptionStyleStyle3TagP = _this$props.descriptionStyleStyle3TagP,
+          x35Fedd9C5Bbc449B91D15Ce70336A6B0 = _this$props.x35Fedd9C5Bbc449B91D15Ce70336A6B0,
+          f582668EF9B64Daa9F4058B68Ac4Bee1 = _this$props.f582668EF9B64Daa9F4058B68Ac4Bee1,
+          d90E54Ec6Bd24Ff19C20Bcb6C571D34B = _this$props.d90E54Ec6Bd24Ff19C20Bcb6C571D34B,
+          overlapGroup = _this$props.overlapGroup,
+          x96C0Dd6BF6De41Cc92Cf975Ee038F9D5 = _this$props.x96C0Dd6BF6De41Cc92Cf975Ee038F9D5,
+          x96Bf38A78B0B4EbdAa2AD894711F81E1 = _this$props.x96Bf38A78B0B4EbdAa2AD894711F81E1,
+          productsStyleStyle3TagH5 = _this$props.productsStyleStyle3TagH5,
+          productStyleStyle3TagUi_L1 = _this$props.productStyleStyle3TagUi_L1,
+          productStyleStyle3TagUi_L2 = _this$props.productStyleStyle3TagUi_L2,
+          productStyleStyle3TagUi_L3 = _this$props.productStyleStyle3TagUi_L3,
+          productStyleStyle3TagUi_L4 = _this$props.productStyleStyle3TagUi_L4,
+          servicesStyleStyle3TagH5 = _this$props.servicesStyleStyle3TagH5,
+          serviceStyleStyle3TagUi_L1 = _this$props.serviceStyleStyle3TagUi_L1,
+          serviceStyleStyle3TagUi_L2 = _this$props.serviceStyleStyle3TagUi_L2,
+          serviceStyleStyle3TagUi_L3 = _this$props.serviceStyleStyle3TagUi_L3,
+          serviceStyleStyle3TagUi_L4 = _this$props.serviceStyleStyle3TagUi_L4,
+          resourcesStyleStyle3TagH5 = _this$props.resourcesStyleStyle3TagH5,
+          resourceStyleStyle3TagUi_L1 = _this$props.resourceStyleStyle3TagUi_L1,
+          resourceStyleStyle3TagUi_L2 = _this$props.resourceStyleStyle3TagUi_L2,
+          resourceStyleStyle3TagUi_L3 = _this$props.resourceStyleStyle3TagUi_L3,
+          resourceStyleStyle3TagUi_L4 = _this$props.resourceStyleStyle3TagUi_L4,
+          featuredContentProps = _this$props.featuredContentProps,
+          heroProps = _this$props.heroProps,
+          circleButtonSIZELARGESTATEDEFAULTST = _this$props.circleButtonSIZELARGESTATEDEFAULTST,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU,
+          circleButtonSIZELARGESTATEDEFAULTST2 = _this$props.circleButtonSIZELARGESTATEDEFAULTST2,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU2 = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU2,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU3 = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU3;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container-center-horizontal"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "classic-home screen"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group7"
+      }, /*#__PURE__*/_react.default.createElement(_FeaturedContent.default, {
+        imageBlock1Props: featuredContentProps.imageBlock1Props,
+        imageBlock2Props: featuredContentProps.imageBlock2Props,
+        imageBlock3Props: featuredContentProps.imageBlock3Props
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group5"
+      }, /*#__PURE__*/_react.default.createElement(_Hero.default, {
+        hero: heroProps.hero
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "header"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-tagh6"
+      }, titleTagH6), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tabs"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-stateactive"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label poppins-medium-celeste-16px"
+      }, label1))), /*#__PURE__*/_react.default.createElement(_TabItemSTATEDEFAULT.default, null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group"
+      }, /*#__PURE__*/_react.default.createElement(_Area.default, null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-1"
+      }, label2))), /*#__PURE__*/_react.default.createElement(_TabItemSTATEDEFAULT2.default, null), /*#__PURE__*/_react.default.createElement(_TabItemSTATEDEFAULT3.default, null)), /*#__PURE__*/_react.default.createElement(_IconICONfeathersearchSIZELARGESTYLE.default, null), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)))), /*#__PURE__*/_react.default.createElement(_Video.default, null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tion-container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "promotion-box",
+        style: {
+          backgroundImage: "url(".concat(promotionBox, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "lorem-ipsum-dolor-si poppins-bold-old-lace-32px"
+      }, loremIpsumDolorSi), /*#__PURE__*/_react.default.createElement("p", {
+        className: "we-believe-that-paym poppins-medium-old-lace-16px"
+      }, weBelieveThatPaym), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-solutions"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4 poppins-bold-old-lace-32px"
+      }, h6TagH4), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line",
+        src: line
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-1"
+      }, /*#__PURE__*/_react.default.createElement(_CircleButtonSIZELARGESTATEDEFAULTST.default, {
+        x8A145B4607554D079Cf68833E2Be6E4E: circleButtonSIZELARGESTATEDEFAULTST.x8A145B4607554D079Cf68833E2Be6E4E
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5 poppins-bold-old-lace-24px"
+      }, h6TagH51), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp poppins-normal-white-16px"
+      }, h6TagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block"
+      }, /*#__PURE__*/_react.default.createElement(_CircleButtonSIZELARGESTATEDEFAULTST2.default, {
+        x2281B8E498B74370B56907Def5F21A66: circleButtonSIZELARGESTATEDEFAULTST2.x2281B8E498B74370B56907Def5F21A66
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5 poppins-bold-old-lace-24px"
+      }, h6TagH52), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp poppins-normal-white-16px"
+      }, h6TagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU2.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherawar"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "x891cfd2b-8b3e-489b-8960-32f7cf9845ba border-2-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "a230cb3d-e700-48a5-a760-c060353cfdfa",
+        src: a230Cb3DE70048A5A760C060353Cfdfa
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5 poppins-bold-old-lace-24px"
+      }, h6TagH53), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp poppins-normal-white-16px"
+      }, h6TagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU3.className
+      }))))), /*#__PURE__*/_react.default.createElement(_Newsletter.default, null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-row"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-col"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "company-stylestyle3tagh4 poppins-bold-old-lace-32px"
+      }, companyStyleStyle3TagH4), /*#__PURE__*/_react.default.createElement("p", {
+        className: "description-stylestyle3tagp poppins-normal-star-dust-16px"
+      }, descriptionStyleStyle3TagP), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-size-container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-1"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x35fedd9c-5bbc-449b-91d1-5ce70336a6b0",
+        src: x35Fedd9C5Bbc449B91D15Ce70336A6B0
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-2"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "f582668e-f9b6-4daa-9f40-58b68ac4bee1",
+        src: f582668EF9B64Daa9F4058B68Ac4Bee1
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "bde720ee-9faa-4f37-a63d-bc8cb9173acd border-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-row-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "c76b58bc-3b79-41ee-bfb9-8d0f6f858054 border-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "d90e54ec-6bd2-4ff1-9c20-bcb6c571d34b",
+        src: d90E54Ec6Bd24Ff19C20Bcb6C571D34B
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-2",
+        style: {
+          backgroundImage: "url(".concat(overlapGroup, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x96c0dd6b-f6de-41cc-92cf-975ee038f9d5",
+        src: x96C0Dd6BF6De41Cc92Cf975Ee038F9D5
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-5"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-call",
+        src: x96Bf38A78B0B4EbdAa2AD894711F81E1
+      })))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5 poppins-bold-old-lace-24px"
+      }, productsStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-1 poppins-medium-old-lace-18px"
+      }, productStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l poppins-medium-old-lace-18px"
+      }, productStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l poppins-medium-old-lace-18px"
+      }, productStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-2 poppins-medium-old-lace-18px"
+      }, productStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5 poppins-bold-old-lace-24px"
+      }, servicesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-1 poppins-medium-old-lace-18px"
+      }, serviceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l poppins-medium-old-lace-18px"
+      }, serviceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l poppins-medium-old-lace-18px"
+      }, serviceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l poppins-medium-old-lace-18px"
+      }, serviceStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5 poppins-bold-old-lace-24px"
+      }, resourcesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l poppins-medium-old-lace-18px"
+      }, resourceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-1 poppins-medium-old-lace-18px"
+      }, resourceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-2 poppins-medium-old-lace-18px"
+      }, resourceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-3 poppins-medium-old-lace-18px"
+      }, resourceStyleStyle3TagUi_L4)))), /*#__PURE__*/_react.default.createElement(_FooterStrip.default, null)));
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "lorem-ipsum-dolor-si poppins-bold-old-lace-32px"
-  }, loremIpsumDolorSi), /*#__PURE__*/_react.default.createElement("p", {
-    className: "we-believe-that-paym poppins-medium-old-lace-16px"
-  }, weBelieveThatPaym), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.default, null)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-solutions"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4 poppins-bold-old-lace-32px"
-  }, h6TagH4), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line",
-    src: line
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-1"
-  }, /*#__PURE__*/_react.default.createElement(_CircleButtonSIZELARGESTATEDEFAULTST.default, {
-    x8A145B4607554D079Cf68833E2Be6E4E: circleButtonSIZELARGESTATEDEFAULTST.x8A145B4607554D079Cf68833E2Be6E4E
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5 poppins-bold-old-lace-24px"
-  }, h6TagH51), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp poppins-normal-white-16px"
-  }, h6TagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block"
-  }, /*#__PURE__*/_react.default.createElement(_CircleButtonSIZELARGESTATEDEFAULTST2.default, {
-    x2281B8E498B74370B56907Def5F21A66: circleButtonSIZELARGESTATEDEFAULTST2.x2281B8E498B74370B56907Def5F21A66
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5 poppins-bold-old-lace-24px"
-  }, h6TagH52), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp poppins-normal-white-16px"
-  }, h6TagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU2.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherawar"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "x891cfd2b-8b3e-489b-8960-32f7cf9845ba border-2-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "a230cb3d-e700-48a5-a760-c060353cfdfa",
-    src: a230Cb3DE70048A5A760C060353Cfdfa
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5 poppins-bold-old-lace-24px"
-  }, h6TagH53), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp poppins-normal-white-16px"
-  }, h6TagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU2.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU3.className
-  }))))), /*#__PURE__*/_react.default.createElement(_Newsletter.default, null), /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-col"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "company-stylestyle3tagh4 poppins-bold-old-lace-32px"
-  }, companyStyleStyle3TagH4), /*#__PURE__*/_react.default.createElement("p", {
-    className: "description-stylestyle3tagp poppins-normal-star-dust-16px"
-  }, descriptionStyleStyle3TagP), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-size-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-1"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x35fedd9c-5bbc-449b-91d1-5ce70336a6b0",
-    src: x35Fedd9C5Bbc449B91D15Ce70336A6B0
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-2"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "f582668e-f9b6-4daa-9f40-58b68ac4bee1",
-    src: f582668EF9B64Daa9F4058B68Ac4Bee1
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "bde720ee-9faa-4f37-a63d-bc8cb9173acd border-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-row-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "c76b58bc-3b79-41ee-bfb9-8d0f6f858054 border-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "d90e54ec-6bd2-4ff1-9c20-bcb6c571d34b",
-    src: d90E54Ec6Bd24Ff19C20Bcb6C571D34B
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-2",
-    style: {
-      backgroundImage: "url(".concat(overlapGroup, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x96c0dd6b-f6de-41cc-92cf-975ee038f9d5",
-    src: x96C0Dd6BF6De41Cc92Cf975Ee038F9D5
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-5"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-call",
-    src: x96Bf38A78B0B4EbdAa2AD894711F81E1
-  })))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5 poppins-bold-old-lace-24px"
-  }, productsStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-1 poppins-medium-old-lace-18px"
-  }, productStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l poppins-medium-old-lace-18px"
-  }, productStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l poppins-medium-old-lace-18px"
-  }, productStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-2 poppins-medium-old-lace-18px"
-  }, productStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5 poppins-bold-old-lace-24px"
-  }, servicesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-1 poppins-medium-old-lace-18px"
-  }, serviceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l poppins-medium-old-lace-18px"
-  }, serviceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l poppins-medium-old-lace-18px"
-  }, serviceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l poppins-medium-old-lace-18px"
-  }, serviceStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5 poppins-bold-old-lace-24px"
-  }, resourcesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l poppins-medium-old-lace-18px"
-  }, resourceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-1 poppins-medium-old-lace-18px"
-  }, resourceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-2 poppins-medium-old-lace-18px"
-  }, resourceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-3 poppins-medium-old-lace-18px"
-  }, resourceStyleStyle3TagUi_L4)))), /*#__PURE__*/_react.default.createElement(_FooterStrip.default, null)));
-}
+  }]);
+
+  return ClassicHome22;
+}(_react.default.Component);
 
 var _default = ClassicHome22;
 exports.default = _default;
@@ -34641,26 +35270,66 @@ require("./ImageBlock2.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ImageBlock2(props) {
-  var imageAssetSmallSizeDefaultStateDefa = props.imageAssetSmallSizeDefaultStateDefa,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "image-block-3 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "image-assetsmallsize-defaultstatedefault-1",
-    style: {
-      backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ImageBlock2 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ImageBlock2, _React$Component);
+
+  var _super = _createSuper(ImageBlock2);
+
+  function ImageBlock2() {
+    _classCallCheck(this, ImageBlock2);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ImageBlock2, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          imageAssetSmallSizeDefaultStateDefa = _this$props.imageAssetSmallSizeDefaultStateDefa,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "image-block-3 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "image-assetsmallsize-defaultstatedefault-1",
+        style: {
+          backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+        }
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-5 poppins-medium-old-lace-15px"
+      }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-3 poppins-normal-white-16px"
+      }, "Lorem ipsum dolor sit amet, consectetur ", /*#__PURE__*/_react.default.createElement("br", null), "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-10"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-16 poppins-medium-black-15px"
+      }, "Read More")));
     }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-5 poppins-medium-old-lace-15px"
-  }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-3 poppins-normal-white-16px"
-  }, "Lorem ipsum dolor sit amet, consectetur ", /*#__PURE__*/_react.default.createElement("br", null), "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-10"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-16 poppins-medium-black-15px"
-  }, "Read More")));
-}
+  }]);
+
+  return ImageBlock2;
+}(_react.default.Component);
 
 var _default = ImageBlock2;
 exports.default = _default;
@@ -34683,19 +35352,59 @@ require("./TabItemSTATEACTIVE.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function TabItemSTATEACTIVE(props) {
-  var children = props.children,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-stateactive-1 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-7"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-17 poppins-medium-celeste-14px"
-  }, children)));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var TabItemSTATEACTIVE = /*#__PURE__*/function (_React$Component) {
+  _inherits(TabItemSTATEACTIVE, _React$Component);
+
+  var _super = _createSuper(TabItemSTATEACTIVE);
+
+  function TabItemSTATEACTIVE() {
+    _classCallCheck(this, TabItemSTATEACTIVE);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(TabItemSTATEACTIVE, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          children = _this$props.children,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-stateactive-1 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-7"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-17 poppins-medium-celeste-14px"
+      }, children)));
+    }
+  }]);
+
+  return TabItemSTATEACTIVE;
+}(_react.default.Component);
 
 var _default = TabItemSTATEACTIVE;
 exports.default = _default;
@@ -34718,14 +35427,53 @@ require("./ButtonDISPLAYELEMENTSLabelSIZEMEDIU3.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ButtonDISPLAYELEMENTSLabelSIZEMEDIU3(props) {
-  var className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-12 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-18 poppins-medium-black-15px"
-  }, "Read More"));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ButtonDISPLAYELEMENTSLabelSIZEMEDIU3 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ButtonDISPLAYELEMENTSLabelSIZEMEDIU3, _React$Component);
+
+  var _super = _createSuper(ButtonDISPLAYELEMENTSLabelSIZEMEDIU3);
+
+  function ButtonDISPLAYELEMENTSLabelSIZEMEDIU3() {
+    _classCallCheck(this, ButtonDISPLAYELEMENTSLabelSIZEMEDIU3);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ButtonDISPLAYELEMENTSLabelSIZEMEDIU3, [{
+    key: "render",
+    value: function render() {
+      var className = this.props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-12 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-18 poppins-medium-black-15px"
+      }, "Read More"));
+    }
+  }]);
+
+  return ButtonDISPLAYELEMENTSLabelSIZEMEDIU3;
+}(_react.default.Component);
 
 var _default = ButtonDISPLAYELEMENTSLabelSIZEMEDIU3;
 exports.default = _default;
@@ -34748,16 +35496,56 @@ require("./Icon.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Icon(props) {
-  var src = props.src,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-18 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x94de9112-46f0-4b8b-a4d7-36be86602109-1",
-    src: src
-  }));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Icon = /*#__PURE__*/function (_React$Component) {
+  _inherits(Icon, _React$Component);
+
+  var _super = _createSuper(Icon);
+
+  function Icon() {
+    _classCallCheck(this, Icon);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Icon, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          src = _this$props.src,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-18 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x94de9112-46f0-4b8b-a4d7-36be86602109-1",
+        src: src
+      }));
+    }
+  }]);
+
+  return Icon;
+}(_react.default.Component);
 
 var _default = Icon;
 exports.default = _default;
@@ -34788,390 +35576,430 @@ require("./ClassicHome32.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ClassicHome32(props) {
-  var h6TagH41 = props.h6TagH41,
-      line1 = props.line1,
-      hero = props.hero,
-      loremIpsumDolorSi1 = props.loremIpsumDolorSi1,
-      heroText = props.heroText,
-      label1 = props.label1,
-      titleTagH6 = props.titleTagH6,
-      label2 = props.label2,
-      label3 = props.label3,
-      label4 = props.label4,
-      a05Dc37F4D7E4E2797AfAc3C219Da6B5 = props.a05Dc37F4D7E4E2797AfAc3C219Da6B5,
-      label5 = props.label5,
-      promotionBox = props.promotionBox,
-      loremIpsumDolorSi2 = props.loremIpsumDolorSi2,
-      weBelieveThatPaym = props.weBelieveThatPaym,
-      h6TagH42 = props.h6TagH42,
-      line2 = props.line2,
-      x04D47D4BCcbf4Ab990D4Ba345F3C4795 = props.x04D47D4BCcbf4Ab990D4Ba345F3C4795,
-      d7E55Bb16B70409A99814B7E759E4518 = props.d7E55Bb16B70409A99814B7E759E4518,
-      h6TagH51 = props.h6TagH51,
-      h6TagP1 = props.h6TagP1,
-      x986106Ac0Ab9497EA674Dac399D729Ed = props.x986106Ac0Ab9497EA674Dac399D729Ed,
-      x1D7Ad06B4Cac4960899B406511470F66 = props.x1D7Ad06B4Cac4960899B406511470F66,
-      h6TagH52 = props.h6TagH52,
-      h6TagP2 = props.h6TagP2,
-      a230Cb3DE70048A5A760C060353Cfdfa = props.a230Cb3DE70048A5A760C060353Cfdfa,
-      h6TagH53 = props.h6TagH53,
-      h6TagP3 = props.h6TagP3,
-      video = props.video,
-      h6TagH43 = props.h6TagH43,
-      h6 = props.h6,
-      newsletterTagH4 = props.newsletterTagH4,
-      duisAuteIrureDolo = props.duisAuteIrureDolo,
-      value = props.value,
-      label6 = props.label6,
-      copyrightStyleStyle2TagUi_S = props.copyrightStyleStyle2TagUi_S,
-      privacyPolicyStyleStyle2TagUi_S = props.privacyPolicyStyleStyle2TagUi_S,
-      termsOfServiceSt = props.termsOfServiceSt,
-      companyStyleStyle3TagH4 = props.companyStyleStyle3TagH4,
-      descriptionStyleStyle3TagP = props.descriptionStyleStyle3TagP,
-      x35Fedd9C5Bbc449B91D15Ce70336A6B0 = props.x35Fedd9C5Bbc449B91D15Ce70336A6B0,
-      f582668EF9B64Daa9F4058B68Ac4Bee1 = props.f582668EF9B64Daa9F4058B68Ac4Bee1,
-      d90E54Ec6Bd24Ff19C20Bcb6C571D34B = props.d90E54Ec6Bd24Ff19C20Bcb6C571D34B,
-      overlapGroup = props.overlapGroup,
-      x96C0Dd6BF6De41Cc92Cf975Ee038F9D5 = props.x96C0Dd6BF6De41Cc92Cf975Ee038F9D5,
-      productsStyleStyle3TagH5 = props.productsStyleStyle3TagH5,
-      productStyleStyle3TagUi_L1 = props.productStyleStyle3TagUi_L1,
-      productStyleStyle3TagUi_L2 = props.productStyleStyle3TagUi_L2,
-      productStyleStyle3TagUi_L3 = props.productStyleStyle3TagUi_L3,
-      productStyleStyle3TagUi_L4 = props.productStyleStyle3TagUi_L4,
-      servicesStyleStyle3TagH5 = props.servicesStyleStyle3TagH5,
-      serviceStyleStyle3TagUi_L1 = props.serviceStyleStyle3TagUi_L1,
-      serviceStyleStyle3TagUi_L2 = props.serviceStyleStyle3TagUi_L2,
-      serviceStyleStyle3TagUi_L3 = props.serviceStyleStyle3TagUi_L3,
-      serviceStyleStyle3TagUi_L4 = props.serviceStyleStyle3TagUi_L4,
-      resourcesStyleStyle3TagH5 = props.resourcesStyleStyle3TagH5,
-      resourceStyleStyle3TagUi_L1 = props.resourceStyleStyle3TagUi_L1,
-      resourceStyleStyle3TagUi_L2 = props.resourceStyleStyle3TagUi_L2,
-      resourceStyleStyle3TagUi_L3 = props.resourceStyleStyle3TagUi_L3,
-      resourceStyleStyle3TagUi_L4 = props.resourceStyleStyle3TagUi_L4,
-      imageBlock21Props = props.imageBlock21Props,
-      imageBlock22Props = props.imageBlock22Props,
-      imageBlock23Props = props.imageBlock23Props,
-      tabItemSTATEACTIVE1Props = props.tabItemSTATEACTIVE1Props,
-      tabItemSTATEACTIVE2Props = props.tabItemSTATEACTIVE2Props,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU2 = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU2,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU3 = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU3,
-      icon1Props = props.icon1Props,
-      icon2Props = props.icon2Props;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container-center-horizontal"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "classic-home-1 screen"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group8"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-content-1"
-  }, /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock21Props.imageAssetSmallSizeDefaultStateDefa
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-col-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4-3 poppins-bold-old-lace-32px"
-  }, h6TagH41), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-2",
-    src: line1
-  }), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock22Props.imageAssetSmallSizeDefaultStateDefa,
-    className: imageBlock22Props.className
-  })), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock23Props.imageAssetSmallSizeDefaultStateDefa,
-    className: imageBlock23Props.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group5-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "hero-1",
-    style: {
-      backgroundImage: "url(".concat(hero, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ClassicHome32 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ClassicHome32, _React$Component);
+
+  var _super = _createSuper(ClassicHome32);
+
+  function ClassicHome32() {
+    _classCallCheck(this, ClassicHome32);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ClassicHome32, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          h6TagH41 = _this$props.h6TagH41,
+          line1 = _this$props.line1,
+          hero = _this$props.hero,
+          loremIpsumDolorSi1 = _this$props.loremIpsumDolorSi1,
+          heroText = _this$props.heroText,
+          label1 = _this$props.label1,
+          titleTagH6 = _this$props.titleTagH6,
+          label2 = _this$props.label2,
+          label3 = _this$props.label3,
+          label4 = _this$props.label4,
+          a05Dc37F4D7E4E2797AfAc3C219Da6B5 = _this$props.a05Dc37F4D7E4E2797AfAc3C219Da6B5,
+          label5 = _this$props.label5,
+          promotionBox = _this$props.promotionBox,
+          loremIpsumDolorSi2 = _this$props.loremIpsumDolorSi2,
+          weBelieveThatPaym = _this$props.weBelieveThatPaym,
+          h6TagH42 = _this$props.h6TagH42,
+          line2 = _this$props.line2,
+          x04D47D4BCcbf4Ab990D4Ba345F3C4795 = _this$props.x04D47D4BCcbf4Ab990D4Ba345F3C4795,
+          d7E55Bb16B70409A99814B7E759E4518 = _this$props.d7E55Bb16B70409A99814B7E759E4518,
+          h6TagH51 = _this$props.h6TagH51,
+          h6TagP1 = _this$props.h6TagP1,
+          x986106Ac0Ab9497EA674Dac399D729Ed = _this$props.x986106Ac0Ab9497EA674Dac399D729Ed,
+          x1D7Ad06B4Cac4960899B406511470F66 = _this$props.x1D7Ad06B4Cac4960899B406511470F66,
+          h6TagH52 = _this$props.h6TagH52,
+          h6TagP2 = _this$props.h6TagP2,
+          a230Cb3DE70048A5A760C060353Cfdfa = _this$props.a230Cb3DE70048A5A760C060353Cfdfa,
+          h6TagH53 = _this$props.h6TagH53,
+          h6TagP3 = _this$props.h6TagP3,
+          video = _this$props.video,
+          h6TagH43 = _this$props.h6TagH43,
+          h6 = _this$props.h6,
+          newsletterTagH4 = _this$props.newsletterTagH4,
+          duisAuteIrureDolo = _this$props.duisAuteIrureDolo,
+          value = _this$props.value,
+          label6 = _this$props.label6,
+          copyrightStyleStyle2TagUi_S = _this$props.copyrightStyleStyle2TagUi_S,
+          privacyPolicyStyleStyle2TagUi_S = _this$props.privacyPolicyStyleStyle2TagUi_S,
+          termsOfServiceSt = _this$props.termsOfServiceSt,
+          companyStyleStyle3TagH4 = _this$props.companyStyleStyle3TagH4,
+          descriptionStyleStyle3TagP = _this$props.descriptionStyleStyle3TagP,
+          x35Fedd9C5Bbc449B91D15Ce70336A6B0 = _this$props.x35Fedd9C5Bbc449B91D15Ce70336A6B0,
+          f582668EF9B64Daa9F4058B68Ac4Bee1 = _this$props.f582668EF9B64Daa9F4058B68Ac4Bee1,
+          d90E54Ec6Bd24Ff19C20Bcb6C571D34B = _this$props.d90E54Ec6Bd24Ff19C20Bcb6C571D34B,
+          overlapGroup = _this$props.overlapGroup,
+          x96C0Dd6BF6De41Cc92Cf975Ee038F9D5 = _this$props.x96C0Dd6BF6De41Cc92Cf975Ee038F9D5,
+          productsStyleStyle3TagH5 = _this$props.productsStyleStyle3TagH5,
+          productStyleStyle3TagUi_L1 = _this$props.productStyleStyle3TagUi_L1,
+          productStyleStyle3TagUi_L2 = _this$props.productStyleStyle3TagUi_L2,
+          productStyleStyle3TagUi_L3 = _this$props.productStyleStyle3TagUi_L3,
+          productStyleStyle3TagUi_L4 = _this$props.productStyleStyle3TagUi_L4,
+          servicesStyleStyle3TagH5 = _this$props.servicesStyleStyle3TagH5,
+          serviceStyleStyle3TagUi_L1 = _this$props.serviceStyleStyle3TagUi_L1,
+          serviceStyleStyle3TagUi_L2 = _this$props.serviceStyleStyle3TagUi_L2,
+          serviceStyleStyle3TagUi_L3 = _this$props.serviceStyleStyle3TagUi_L3,
+          serviceStyleStyle3TagUi_L4 = _this$props.serviceStyleStyle3TagUi_L4,
+          resourcesStyleStyle3TagH5 = _this$props.resourcesStyleStyle3TagH5,
+          resourceStyleStyle3TagUi_L1 = _this$props.resourceStyleStyle3TagUi_L1,
+          resourceStyleStyle3TagUi_L2 = _this$props.resourceStyleStyle3TagUi_L2,
+          resourceStyleStyle3TagUi_L3 = _this$props.resourceStyleStyle3TagUi_L3,
+          resourceStyleStyle3TagUi_L4 = _this$props.resourceStyleStyle3TagUi_L4,
+          imageBlock21Props = _this$props.imageBlock21Props,
+          imageBlock22Props = _this$props.imageBlock22Props,
+          imageBlock23Props = _this$props.imageBlock23Props,
+          tabItemSTATEACTIVE1Props = _this$props.tabItemSTATEACTIVE1Props,
+          tabItemSTATEACTIVE2Props = _this$props.tabItemSTATEACTIVE2Props,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU2 = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU2,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU3 = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU3,
+          icon1Props = _this$props.icon1Props,
+          icon2Props = _this$props.icon2Props;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container-center-horizontal"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "classic-home-1 screen"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group8"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-content-1"
+      }, /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock21Props.imageAssetSmallSizeDefaultStateDefa
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-col-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4-3 poppins-bold-old-lace-32px"
+      }, h6TagH41), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-2",
+        src: line1
+      }), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock22Props.imageAssetSmallSizeDefaultStateDefa,
+        className: imageBlock22Props.className
+      })), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock23Props.imageAssetSmallSizeDefaultStateDefa,
+        className: imageBlock23Props.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group5-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "hero-1",
+        style: {
+          backgroundImage: "url(".concat(hero, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "lorem-ipsum-dolor-si-2 poppins-bold-beeswax-56px"
+      }, loremIpsumDolorSi1), /*#__PURE__*/_react.default.createElement("p", {
+        className: "hero-text-1 poppins-medium-old-lace-16px"
+      }, heroText), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-11 poppins-medium-black-14px"
+      }, label1))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "header-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-tagh6-1"
+      }, titleTagH6), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tabs-1"
+      }, /*#__PURE__*/_react.default.createElement(_TabItemSTATEACTIVE.default, null, tabItemSTATEACTIVE1Props.children), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group3-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-5"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-12"
+      }, label2))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "bar-statedefault-1 border-1px-beeswax"
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-13"
+      }, label3))), /*#__PURE__*/_react.default.createElement(_TabItemSTATEACTIVE.default, {
+        className: tabItemSTATEACTIVE2Props.className
+      }, tabItemSTATEACTIVE2Props.children), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group2-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-5"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-14 poppins-medium-celeste-14px"
+      }, label4)))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeathersear-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-10 border-2-7px-old-lace"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "a05dc37f-4d7e-4e27-97af-ac3c219da6b5-1",
+        src: a05Dc37F4D7E4E2797AfAc3C219Da6B5
+      }))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-8"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-11 poppins-medium-black-14px"
+      }, label5))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group7-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "promotion-box-1",
+        style: {
+          backgroundImage: "url(".concat(promotionBox, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "lorem-ipsum-dolor-si-3 poppins-bold-old-lace-29px"
+      }, loremIpsumDolorSi2), /*#__PURE__*/_react.default.createElement("p", {
+        className: "we-believe-that-paym-1 poppins-medium-old-lace-16px"
+      }, weBelieveThatPaym), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-solutions-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4-4 poppins-bold-old-lace-29px"
+      }, h6TagH42), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-3",
+        src: line2
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-container-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "x4a6c94fa-bab7-4ffe-81f3-fb5fd820a20a-1 border-2-4px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x04d47d4b-ccbf-4ab9-90d4-ba345f3c4795-1",
+        src: x04D47D4BCcbf4Ab990D4Ba345F3C4795
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "d7e55bb1-6b70-409a-9981-4b7e759e4518-1",
+        src: d7E55Bb16B70409A99814B7E759E4518
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5-1 poppins-bold-old-lace-21px"
+      }, h6TagH51), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-2 poppins-normal-white-16px"
+      }, h6TagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-12"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-8"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x986106ac-0ab9-497e-a674-dac399d729ed-1",
+        src: x986106Ac0Ab9497EA674Dac399D729Ed
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x1d7ad06b-4cac-4960-899b-406511470f66-1",
+        src: x1D7Ad06B4Cac4960899B406511470F66
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5-1 poppins-bold-old-lace-21px"
+      }, h6TagH52), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-2 poppins-normal-white-16px"
+      }, h6TagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU2.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherawar-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-13"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-9"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "x891cfd2b-8b3e-489b-8960-32f7cf9845ba-1 border-2-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "a230cb3d-e700-48a5-a760-c060353cfdfa-1",
+        src: a230Cb3DE70048A5A760C060353Cfdfa
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5-1 poppins-bold-old-lace-21px"
+      }, h6TagH53), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-2 poppins-normal-white-16px"
+      }, h6TagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU3.className
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "video-1",
+        style: {
+          backgroundImage: "url(".concat(video, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4-5 poppins-bold-old-lace-29px"
+      }, h6TagH43), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-4 poppins-medium-old-lace-16px"
+      }, h6), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherplay-1"
+      }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+        src: icon1Props.src
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "newsletter-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "newsletter-tagh4-1 poppins-bold-old-lace-32px"
+      }, newsletterTagH4), /*#__PURE__*/_react.default.createElement("p", {
+        className: "duis-aute-irure-dolo-1 poppins-medium-old-lace-16px"
+      }, duisAuteIrureDolo), /*#__PURE__*/_react.default.createElement("div", {
+        className: "display_elements-container-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "input-display_elemen-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "value-1 poppins-medium-black-14px"
+      }, value)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-9"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-15 poppins-medium-black-14px"
+      }, label6)))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "st-container-1 poppinssemibold-regular-semi-bold-black-11px"
+      }, /*#__PURE__*/_react.default.createElement("p", {
+        className: "copyright-stylestyle2tagui_s-1"
+      }, copyrightStyleStyle2TagUi_S), /*#__PURE__*/_react.default.createElement("div", {
+        className: "privacy-policy-stylestyle2tagui_s-1"
+      }, privacyPolicyStyleStyle2TagUi_S), /*#__PURE__*/_react.default.createElement("div", {
+        className: "terms-of-service-st-1"
+      }, termsOfServiceSt)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-row-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-col-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "company-stylestyle3tagh4-1 poppins-bold-old-lace-29px"
+      }, companyStyleStyle3TagH4), /*#__PURE__*/_react.default.createElement("p", {
+        className: "description-stylestyle3tagp-1 poppins-normal-star-dust-16px"
+      }, descriptionStyleStyle3TagP), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-size-container-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-14"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x35fedd9c-5bbc-449b-91d1-5ce70336a6b0-1",
+        src: x35Fedd9C5Bbc449B91D15Ce70336A6B0
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-15"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "f582668e-f9b6-4daa-9f40-58b68ac4bee1-1",
+        src: f582668EF9B64Daa9F4058B68Ac4Bee1
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-16"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-col-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "bde720ee-9faa-4f37-a63d-bc8cb9173acd-1 border-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "c76b58bc-3b79-41ee-bfb9-8d0f6f858054-1 border-2px-woodsmoke"
+      })), /*#__PURE__*/_react.default.createElement("img", {
+        className: "d90e54ec-6bd2-4ff1-9c20-bcb6c571d34b-1",
+        src: d90E54Ec6Bd24Ff19C20Bcb6C571D34B
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-17"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-10",
+        style: {
+          backgroundImage: "url(".concat(overlapGroup, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x96c0dd6b-f6de-41cc-92cf-975ee038f9d5-1",
+        src: x96C0Dd6BF6De41Cc92Cf975Ee038F9D5
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherphon"
+      }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+        src: icon2Props.src,
+        className: icon2Props.className
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5-1 poppins-bold-old-lace-21px"
+      }, productsStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-4 poppins-medium-old-lace-16px"
+      }, productStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-3 poppins-medium-old-lace-16px"
+      }, productStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-3 poppins-medium-old-lace-16px"
+      }, productStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-5 poppins-medium-old-lace-16px"
+      }, productStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5-1 poppins-bold-old-lace-21px"
+      }, servicesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-3 poppins-medium-old-lace-16px"
+      }, serviceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-2 poppins-medium-old-lace-16px"
+      }, serviceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-2 poppins-medium-old-lace-16px"
+      }, serviceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-4 poppins-medium-old-lace-16px"
+      }, serviceStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5-1 poppins-bold-old-lace-21px"
+      }, resourcesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-4 poppins-medium-old-lace-16px"
+      }, resourceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-5 poppins-medium-old-lace-16px"
+      }, resourceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-6 poppins-medium-old-lace-16px"
+      }, resourceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-7 poppins-medium-old-lace-16px"
+      }, resourceStyleStyle3TagUi_L4))))));
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "lorem-ipsum-dolor-si-2 poppins-bold-beeswax-56px"
-  }, loremIpsumDolorSi1), /*#__PURE__*/_react.default.createElement("p", {
-    className: "hero-text-1 poppins-medium-old-lace-16px"
-  }, heroText), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-11 poppins-medium-black-14px"
-  }, label1))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "header-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-tagh6-1"
-  }, titleTagH6), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tabs-1"
-  }, /*#__PURE__*/_react.default.createElement(_TabItemSTATEACTIVE.default, null, tabItemSTATEACTIVE1Props.children), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group3-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-5"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-12"
-  }, label2))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "bar-statedefault-1 border-1px-beeswax"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-13"
-  }, label3))), /*#__PURE__*/_react.default.createElement(_TabItemSTATEACTIVE.default, {
-    className: tabItemSTATEACTIVE2Props.className
-  }, tabItemSTATEACTIVE2Props.children), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group2-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-5"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-14 poppins-medium-celeste-14px"
-  }, label4)))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeathersear-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-10 border-2-7px-old-lace"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "a05dc37f-4d7e-4e27-97af-ac3c219da6b5-1",
-    src: a05Dc37F4D7E4E2797AfAc3C219Da6B5
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-8"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-11 poppins-medium-black-14px"
-  }, label5))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group7-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "promotion-box-1",
-    style: {
-      backgroundImage: "url(".concat(promotionBox, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "lorem-ipsum-dolor-si-3 poppins-bold-old-lace-29px"
-  }, loremIpsumDolorSi2), /*#__PURE__*/_react.default.createElement("p", {
-    className: "we-believe-that-paym-1 poppins-medium-old-lace-16px"
-  }, weBelieveThatPaym), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-solutions-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4-4 poppins-bold-old-lace-29px"
-  }, h6TagH42), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-3",
-    src: line2
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-container-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "x4a6c94fa-bab7-4ffe-81f3-fb5fd820a20a-1 border-2-4px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x04d47d4b-ccbf-4ab9-90d4-ba345f3c4795-1",
-    src: x04D47D4BCcbf4Ab990D4Ba345F3C4795
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "d7e55bb1-6b70-409a-9981-4b7e759e4518-1",
-    src: d7E55Bb16B70409A99814B7E759E4518
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5-1 poppins-bold-old-lace-21px"
-  }, h6TagH51), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-2 poppins-normal-white-16px"
-  }, h6TagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-12"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-8"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x986106ac-0ab9-497e-a674-dac399d729ed-1",
-    src: x986106Ac0Ab9497EA674Dac399D729Ed
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x1d7ad06b-4cac-4960-899b-406511470f66-1",
-    src: x1D7Ad06B4Cac4960899B406511470F66
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5-1 poppins-bold-old-lace-21px"
-  }, h6TagH52), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-2 poppins-normal-white-16px"
-  }, h6TagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU2.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherawar-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-13"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-9"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "x891cfd2b-8b3e-489b-8960-32f7cf9845ba-1 border-2-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "a230cb3d-e700-48a5-a760-c060353cfdfa-1",
-    src: a230Cb3DE70048A5A760C060353Cfdfa
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5-1 poppins-bold-old-lace-21px"
-  }, h6TagH53), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-2 poppins-normal-white-16px"
-  }, h6TagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU3.className
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "video-1",
-    style: {
-      backgroundImage: "url(".concat(video, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4-5 poppins-bold-old-lace-29px"
-  }, h6TagH43), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-4 poppins-medium-old-lace-16px"
-  }, h6), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherplay-1"
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
-    src: icon1Props.src
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "newsletter-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "newsletter-tagh4-1 poppins-bold-old-lace-32px"
-  }, newsletterTagH4), /*#__PURE__*/_react.default.createElement("p", {
-    className: "duis-aute-irure-dolo-1 poppins-medium-old-lace-16px"
-  }, duisAuteIrureDolo), /*#__PURE__*/_react.default.createElement("div", {
-    className: "display_elements-container-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "input-display_elemen-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "value-1 poppins-medium-black-14px"
-  }, value)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-9"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-15 poppins-medium-black-14px"
-  }, label6)))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "st-container-1 poppinssemibold-regular-semi-bold-black-11px"
-  }, /*#__PURE__*/_react.default.createElement("p", {
-    className: "copyright-stylestyle2tagui_s-1"
-  }, copyrightStyleStyle2TagUi_S), /*#__PURE__*/_react.default.createElement("div", {
-    className: "privacy-policy-stylestyle2tagui_s-1"
-  }, privacyPolicyStyleStyle2TagUi_S), /*#__PURE__*/_react.default.createElement("div", {
-    className: "terms-of-service-st-1"
-  }, termsOfServiceSt)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-row-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-col-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "company-stylestyle3tagh4-1 poppins-bold-old-lace-29px"
-  }, companyStyleStyle3TagH4), /*#__PURE__*/_react.default.createElement("p", {
-    className: "description-stylestyle3tagp-1 poppins-normal-star-dust-16px"
-  }, descriptionStyleStyle3TagP), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-size-container-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-14"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x35fedd9c-5bbc-449b-91d1-5ce70336a6b0-1",
-    src: x35Fedd9C5Bbc449B91D15Ce70336A6B0
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-15"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "f582668e-f9b6-4daa-9f40-58b68ac4bee1-1",
-    src: f582668EF9B64Daa9F4058B68Ac4Bee1
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-16"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-col-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "bde720ee-9faa-4f37-a63d-bc8cb9173acd-1 border-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "c76b58bc-3b79-41ee-bfb9-8d0f6f858054-1 border-2px-woodsmoke"
-  })), /*#__PURE__*/_react.default.createElement("img", {
-    className: "d90e54ec-6bd2-4ff1-9c20-bcb6c571d34b-1",
-    src: d90E54Ec6Bd24Ff19C20Bcb6C571D34B
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-17"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-10",
-    style: {
-      backgroundImage: "url(".concat(overlapGroup, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x96c0dd6b-f6de-41cc-92cf-975ee038f9d5-1",
-    src: x96C0Dd6BF6De41Cc92Cf975Ee038F9D5
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherphon"
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
-    src: icon2Props.src,
-    className: icon2Props.className
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5-1 poppins-bold-old-lace-21px"
-  }, productsStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-4 poppins-medium-old-lace-16px"
-  }, productStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-3 poppins-medium-old-lace-16px"
-  }, productStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-3 poppins-medium-old-lace-16px"
-  }, productStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-5 poppins-medium-old-lace-16px"
-  }, productStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5-1 poppins-bold-old-lace-21px"
-  }, servicesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-3 poppins-medium-old-lace-16px"
-  }, serviceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-2 poppins-medium-old-lace-16px"
-  }, serviceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-2 poppins-medium-old-lace-16px"
-  }, serviceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-4 poppins-medium-old-lace-16px"
-  }, serviceStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5-1 poppins-bold-old-lace-21px"
-  }, resourcesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-4 poppins-medium-old-lace-16px"
-  }, resourceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-5 poppins-medium-old-lace-16px"
-  }, resourceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-6 poppins-medium-old-lace-16px"
-  }, resourceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-7 poppins-medium-old-lace-16px"
-  }, resourceStyleStyle3TagUi_L4))))));
-}
+  }]);
+
+  return ClassicHome32;
+}(_react.default.Component);
 
 var _default = ClassicHome32;
 exports.default = _default;
@@ -35194,16 +36022,56 @@ require("./Icon2.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Icon2(props) {
-  var src = props.src,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-28 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x94de9112-46f0-4b8b-a4d7-36be86602109-2",
-    src: src
-  }));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Icon2 = /*#__PURE__*/function (_React$Component) {
+  _inherits(Icon2, _React$Component);
+
+  var _super = _createSuper(Icon2);
+
+  function Icon2() {
+    _classCallCheck(this, Icon2);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Icon2, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          src = _this$props.src,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-28 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x94de9112-46f0-4b8b-a4d7-36be86602109-2",
+        src: src
+      }));
+    }
+  }]);
+
+  return Icon2;
+}(_react.default.Component);
 
 var _default = Icon2;
 exports.default = _default;
@@ -35226,26 +36094,66 @@ require("./ImageBlock3.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ImageBlock3(props) {
-  var imageAssetSmallSizeDefaultStateDefa = props.imageAssetSmallSizeDefaultStateDefa,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "image-block-6 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "image-assetsmallsize-defaultstatedefault-2",
-    style: {
-      backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ImageBlock3 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ImageBlock3, _React$Component);
+
+  var _super = _createSuper(ImageBlock3);
+
+  function ImageBlock3() {
+    _classCallCheck(this, ImageBlock3);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ImageBlock3, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          imageAssetSmallSizeDefaultStateDefa = _this$props.imageAssetSmallSizeDefaultStateDefa,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "image-block-6 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "image-assetsmallsize-defaultstatedefault-2",
+        style: {
+          backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+        }
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-9 poppins-medium-old-lace-11px"
+      }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-5 poppins-normal-white-16px"
+      }, "Lorem ipsum dolor sit amet, consectetur ", /*#__PURE__*/_react.default.createElement("br", null), "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-16"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-24 poppins-medium-black-12px"
+      }, "Read More")));
     }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-9 poppins-medium-old-lace-11px"
-  }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-5 poppins-normal-white-16px"
-  }, "Lorem ipsum dolor sit amet, consectetur ", /*#__PURE__*/_react.default.createElement("br", null), "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-16"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-24 poppins-medium-black-12px"
-  }, "Read More")));
-}
+  }]);
+
+  return ImageBlock3;
+}(_react.default.Component);
 
 var _default = ImageBlock3;
 exports.default = _default;
@@ -35268,14 +36176,53 @@ require("./ButtonDISPLAYELEMENTSLabelSIZEMEDIU4.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ButtonDISPLAYELEMENTSLabelSIZEMEDIU4(props) {
-  var className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-18 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-25 poppins-medium-black-12px"
-  }, "Read More"));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ButtonDISPLAYELEMENTSLabelSIZEMEDIU4 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ButtonDISPLAYELEMENTSLabelSIZEMEDIU4, _React$Component);
+
+  var _super = _createSuper(ButtonDISPLAYELEMENTSLabelSIZEMEDIU4);
+
+  function ButtonDISPLAYELEMENTSLabelSIZEMEDIU4() {
+    _classCallCheck(this, ButtonDISPLAYELEMENTSLabelSIZEMEDIU4);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ButtonDISPLAYELEMENTSLabelSIZEMEDIU4, [{
+    key: "render",
+    value: function render() {
+      var className = this.props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-18 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-25 poppins-medium-black-12px"
+      }, "Read More"));
+    }
+  }]);
+
+  return ButtonDISPLAYELEMENTSLabelSIZEMEDIU4;
+}(_react.default.Component);
 
 var _default = ButtonDISPLAYELEMENTSLabelSIZEMEDIU4;
 exports.default = _default;
@@ -35304,408 +36251,448 @@ require("./ClassicHome42.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ClassicHome42(props) {
-  var video = props.video,
-      h6TagH41 = props.h6TagH41,
-      h6 = props.h6,
-      h6TagH42 = props.h6TagH42,
-      line1 = props.line1,
-      hero = props.hero,
-      loremIpsumDolorSi1 = props.loremIpsumDolorSi1,
-      heroText = props.heroText,
-      label1 = props.label1,
-      titleTagH6 = props.titleTagH6,
-      label2 = props.label2,
-      label3 = props.label3,
-      label4 = props.label4,
-      label5 = props.label5,
-      label6 = props.label6,
-      a05Dc37F4D7E4E2797AfAc3C219Da6B5 = props.a05Dc37F4D7E4E2797AfAc3C219Da6B5,
-      label7 = props.label7,
-      promotionBox = props.promotionBox,
-      loremIpsumDolorSi2 = props.loremIpsumDolorSi2,
-      weBelieveThatPaym = props.weBelieveThatPaym,
-      h6TagH43 = props.h6TagH43,
-      line2 = props.line2,
-      x04D47D4BCcbf4Ab990D4Ba345F3C4795 = props.x04D47D4BCcbf4Ab990D4Ba345F3C4795,
-      d7E55Bb16B70409A99814B7E759E4518 = props.d7E55Bb16B70409A99814B7E759E4518,
-      h6TagH51 = props.h6TagH51,
-      h6TagP1 = props.h6TagP1,
-      x986106Ac0Ab9497EA674Dac399D729Ed = props.x986106Ac0Ab9497EA674Dac399D729Ed,
-      x1D7Ad06B4Cac4960899B406511470F66 = props.x1D7Ad06B4Cac4960899B406511470F66,
-      h6TagH52 = props.h6TagH52,
-      h6TagP2 = props.h6TagP2,
-      a230Cb3DE70048A5A760C060353Cfdfa = props.a230Cb3DE70048A5A760C060353Cfdfa,
-      h6TagH53 = props.h6TagH53,
-      h6TagP3 = props.h6TagP3,
-      newsletterTagH4 = props.newsletterTagH4,
-      duisAuteIrureDolo = props.duisAuteIrureDolo,
-      value = props.value,
-      label8 = props.label8,
-      copyrightStyleStyle2TagUi_S = props.copyrightStyleStyle2TagUi_S,
-      privacyPolicyStyleStyle2TagUi_S = props.privacyPolicyStyleStyle2TagUi_S,
-      termsOfServiceSt = props.termsOfServiceSt,
-      companyStyleStyle3TagH4 = props.companyStyleStyle3TagH4,
-      descriptionStyleStyle3TagP = props.descriptionStyleStyle3TagP,
-      x35Fedd9C5Bbc449B91D15Ce70336A6B0 = props.x35Fedd9C5Bbc449B91D15Ce70336A6B0,
-      f582668EF9B64Daa9F4058B68Ac4Bee1 = props.f582668EF9B64Daa9F4058B68Ac4Bee1,
-      d90E54Ec6Bd24Ff19C20Bcb6C571D34B = props.d90E54Ec6Bd24Ff19C20Bcb6C571D34B,
-      overlapGroup = props.overlapGroup,
-      x96C0Dd6BF6De41Cc92Cf975Ee038F9D5 = props.x96C0Dd6BF6De41Cc92Cf975Ee038F9D5,
-      productsStyleStyle3TagH5 = props.productsStyleStyle3TagH5,
-      productStyleStyle3TagUi_L1 = props.productStyleStyle3TagUi_L1,
-      productStyleStyle3TagUi_L2 = props.productStyleStyle3TagUi_L2,
-      productStyleStyle3TagUi_L3 = props.productStyleStyle3TagUi_L3,
-      productStyleStyle3TagUi_L4 = props.productStyleStyle3TagUi_L4,
-      servicesStyleStyle3TagH5 = props.servicesStyleStyle3TagH5,
-      serviceStyleStyle3TagUi_L1 = props.serviceStyleStyle3TagUi_L1,
-      serviceStyleStyle3TagUi_L2 = props.serviceStyleStyle3TagUi_L2,
-      serviceStyleStyle3TagUi_L3 = props.serviceStyleStyle3TagUi_L3,
-      serviceStyleStyle3TagUi_L4 = props.serviceStyleStyle3TagUi_L4,
-      resourcesStyleStyle3TagH5 = props.resourcesStyleStyle3TagH5,
-      resourceStyleStyle3TagUi_L1 = props.resourceStyleStyle3TagUi_L1,
-      resourceStyleStyle3TagUi_L2 = props.resourceStyleStyle3TagUi_L2,
-      resourceStyleStyle3TagUi_L3 = props.resourceStyleStyle3TagUi_L3,
-      resourceStyleStyle3TagUi_L4 = props.resourceStyleStyle3TagUi_L4,
-      icon21Props = props.icon21Props,
-      imageBlock31Props = props.imageBlock31Props,
-      imageBlock32Props = props.imageBlock32Props,
-      imageBlock33Props = props.imageBlock33Props,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU2 = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU2,
-      buttonDISPLAYELEMENTSLabelSIZEMEDIU3 = props.buttonDISPLAYELEMENTSLabelSIZEMEDIU3,
-      icon22Props = props.icon22Props;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container-center-horizontal"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "classic-home-2 screen"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group8-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "video-2",
-    style: {
-      backgroundImage: "url(".concat(video, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ClassicHome42 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ClassicHome42, _React$Component);
+
+  var _super = _createSuper(ClassicHome42);
+
+  function ClassicHome42() {
+    _classCallCheck(this, ClassicHome42);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ClassicHome42, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          video = _this$props.video,
+          h6TagH41 = _this$props.h6TagH41,
+          h6 = _this$props.h6,
+          h6TagH42 = _this$props.h6TagH42,
+          line1 = _this$props.line1,
+          hero = _this$props.hero,
+          loremIpsumDolorSi1 = _this$props.loremIpsumDolorSi1,
+          heroText = _this$props.heroText,
+          label1 = _this$props.label1,
+          titleTagH6 = _this$props.titleTagH6,
+          label2 = _this$props.label2,
+          label3 = _this$props.label3,
+          label4 = _this$props.label4,
+          label5 = _this$props.label5,
+          label6 = _this$props.label6,
+          a05Dc37F4D7E4E2797AfAc3C219Da6B5 = _this$props.a05Dc37F4D7E4E2797AfAc3C219Da6B5,
+          label7 = _this$props.label7,
+          promotionBox = _this$props.promotionBox,
+          loremIpsumDolorSi2 = _this$props.loremIpsumDolorSi2,
+          weBelieveThatPaym = _this$props.weBelieveThatPaym,
+          h6TagH43 = _this$props.h6TagH43,
+          line2 = _this$props.line2,
+          x04D47D4BCcbf4Ab990D4Ba345F3C4795 = _this$props.x04D47D4BCcbf4Ab990D4Ba345F3C4795,
+          d7E55Bb16B70409A99814B7E759E4518 = _this$props.d7E55Bb16B70409A99814B7E759E4518,
+          h6TagH51 = _this$props.h6TagH51,
+          h6TagP1 = _this$props.h6TagP1,
+          x986106Ac0Ab9497EA674Dac399D729Ed = _this$props.x986106Ac0Ab9497EA674Dac399D729Ed,
+          x1D7Ad06B4Cac4960899B406511470F66 = _this$props.x1D7Ad06B4Cac4960899B406511470F66,
+          h6TagH52 = _this$props.h6TagH52,
+          h6TagP2 = _this$props.h6TagP2,
+          a230Cb3DE70048A5A760C060353Cfdfa = _this$props.a230Cb3DE70048A5A760C060353Cfdfa,
+          h6TagH53 = _this$props.h6TagH53,
+          h6TagP3 = _this$props.h6TagP3,
+          newsletterTagH4 = _this$props.newsletterTagH4,
+          duisAuteIrureDolo = _this$props.duisAuteIrureDolo,
+          value = _this$props.value,
+          label8 = _this$props.label8,
+          copyrightStyleStyle2TagUi_S = _this$props.copyrightStyleStyle2TagUi_S,
+          privacyPolicyStyleStyle2TagUi_S = _this$props.privacyPolicyStyleStyle2TagUi_S,
+          termsOfServiceSt = _this$props.termsOfServiceSt,
+          companyStyleStyle3TagH4 = _this$props.companyStyleStyle3TagH4,
+          descriptionStyleStyle3TagP = _this$props.descriptionStyleStyle3TagP,
+          x35Fedd9C5Bbc449B91D15Ce70336A6B0 = _this$props.x35Fedd9C5Bbc449B91D15Ce70336A6B0,
+          f582668EF9B64Daa9F4058B68Ac4Bee1 = _this$props.f582668EF9B64Daa9F4058B68Ac4Bee1,
+          d90E54Ec6Bd24Ff19C20Bcb6C571D34B = _this$props.d90E54Ec6Bd24Ff19C20Bcb6C571D34B,
+          overlapGroup = _this$props.overlapGroup,
+          x96C0Dd6BF6De41Cc92Cf975Ee038F9D5 = _this$props.x96C0Dd6BF6De41Cc92Cf975Ee038F9D5,
+          productsStyleStyle3TagH5 = _this$props.productsStyleStyle3TagH5,
+          productStyleStyle3TagUi_L1 = _this$props.productStyleStyle3TagUi_L1,
+          productStyleStyle3TagUi_L2 = _this$props.productStyleStyle3TagUi_L2,
+          productStyleStyle3TagUi_L3 = _this$props.productStyleStyle3TagUi_L3,
+          productStyleStyle3TagUi_L4 = _this$props.productStyleStyle3TagUi_L4,
+          servicesStyleStyle3TagH5 = _this$props.servicesStyleStyle3TagH5,
+          serviceStyleStyle3TagUi_L1 = _this$props.serviceStyleStyle3TagUi_L1,
+          serviceStyleStyle3TagUi_L2 = _this$props.serviceStyleStyle3TagUi_L2,
+          serviceStyleStyle3TagUi_L3 = _this$props.serviceStyleStyle3TagUi_L3,
+          serviceStyleStyle3TagUi_L4 = _this$props.serviceStyleStyle3TagUi_L4,
+          resourcesStyleStyle3TagH5 = _this$props.resourcesStyleStyle3TagH5,
+          resourceStyleStyle3TagUi_L1 = _this$props.resourceStyleStyle3TagUi_L1,
+          resourceStyleStyle3TagUi_L2 = _this$props.resourceStyleStyle3TagUi_L2,
+          resourceStyleStyle3TagUi_L3 = _this$props.resourceStyleStyle3TagUi_L3,
+          resourceStyleStyle3TagUi_L4 = _this$props.resourceStyleStyle3TagUi_L4,
+          icon21Props = _this$props.icon21Props,
+          imageBlock31Props = _this$props.imageBlock31Props,
+          imageBlock32Props = _this$props.imageBlock32Props,
+          imageBlock33Props = _this$props.imageBlock33Props,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU2 = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU2,
+          buttonDISPLAYELEMENTSLabelSIZEMEDIU3 = _this$props.buttonDISPLAYELEMENTSLabelSIZEMEDIU3,
+          icon22Props = _this$props.icon22Props;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container-center-horizontal"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "classic-home-2 screen"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group8-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "video-2",
+        style: {
+          backgroundImage: "url(".concat(video, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4-6 poppins-bold-old-lace-23px"
+      }, h6TagH41), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-8 poppins-medium-old-lace-16px"
+      }, h6), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-9"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherplay-2"
+      }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+        src: icon21Props.src
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-content-2"
+      }, /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock31Props.imageAssetSmallSizeDefaultStateDefa
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-col-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4-7 poppins-bold-old-lace-32px"
+      }, h6TagH42), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-4",
+        src: line1
+      }), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock32Props.imageAssetSmallSizeDefaultStateDefa,
+        className: imageBlock32Props.className
+      })), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: imageBlock33Props.imageAssetSmallSizeDefaultStateDefa,
+        className: imageBlock33Props.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group5-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "hero-2",
+        style: {
+          backgroundImage: "url(".concat(hero, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "lorem-ipsum-dolor-si-4 poppins-bold-beeswax-56px"
+      }, loremIpsumDolorSi1), /*#__PURE__*/_react.default.createElement("p", {
+        className: "hero-text-2 poppins-medium-old-lace-16px"
+      }, heroText), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-13"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-19 poppins-medium-black-12px"
+      }, label1))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "header-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-tagh6-2"
+      }, titleTagH6), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tabs-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-stateactive-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group4-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-8"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-20 poppins-medium-celeste-11px"
+      }, label2))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-8"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group3-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-8"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-21 poppins-medium-celeste-12px"
+      }, label3))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-9"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-12"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-9"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "bar-statedefault-2 border-1px-beeswax"
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-22"
+      }, label4))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-10"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group1-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-8"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-21 poppins-medium-celeste-12px"
+      }, label5))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tab-item-statedefault-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group2-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "area-8"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-20 poppins-medium-celeste-11px"
+      }, label6)))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeathersear-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-20"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-13"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "a554ea44-3b35-4dcc-a06b-36a32ca49bf1 border-2-7px-old-lace"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "a05dc37f-4d7e-4e27-97af-ac3c219da6b5-2",
+        src: a05Dc37F4D7E4E2797AfAc3C219Da6B5
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-14"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-19 poppins-medium-black-12px"
+      }, label7))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "tion-container-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "promotion-box-2",
+        style: {
+          backgroundImage: "url(".concat(promotionBox, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "lorem-ipsum-dolor-si-5 poppins-bold-old-lace-24px"
+      }, loremIpsumDolorSi2), /*#__PURE__*/_react.default.createElement("p", {
+        className: "we-believe-that-paym-2 poppins-medium-old-lace-16px"
+      }, weBelieveThatPaym), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-solutions-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh4-8 poppins-bold-old-lace-23px"
+      }, h6TagH43), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-5",
+        src: line2
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-container-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-10"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-21"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-14"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "x4a6c94fa-bab7-4ffe-81f3-fb5fd820a20a-2 border-2-4px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x04d47d4b-ccbf-4ab9-90d4-ba345f3c4795-2",
+        src: x04D47D4BCcbf4Ab990D4Ba345F3C4795
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "d7e55bb1-6b70-409a-9981-4b7e759e4518-2",
+        src: d7E55Bb16B70409A99814B7E759E4518
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5-2 poppins-bold-old-lace-17px"
+      }, h6TagH51), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-4 poppins-normal-white-16px"
+      }, h6TagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-8"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-22"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-15"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x986106ac-0ab9-497e-a674-dac399d729ed-2",
+        src: x986106Ac0Ab9497EA674Dac399D729Ed
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x1d7ad06b-4cac-4960-899b-406511470f66-2",
+        src: x1D7Ad06B4Cac4960899B406511470F66
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5-2 poppins-bold-old-lace-17px"
+      }, h6TagH52), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-4 poppins-normal-white-16px"
+      }, h6TagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU2.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-8"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherawar-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-23"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-16"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "x891cfd2b-8b3e-489b-8960-32f7cf9845ba-2 border-2-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "a230cb3d-e700-48a5-a760-c060353cfdfa-2",
+        src: a230Cb3DE70048A5A760C060353Cfdfa
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "h6-tagh5-2 poppins-bold-old-lace-17px"
+      }, h6TagH53), /*#__PURE__*/_react.default.createElement("p", {
+        className: "h6-tagp-4 poppins-normal-white-16px"
+      }, h6TagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: buttonDISPLAYELEMENTSLabelSIZEMEDIU3.className
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "newsletter-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "newsletter-tagh4-2 poppins-bold-old-lace-32px"
+      }, newsletterTagH4), /*#__PURE__*/_react.default.createElement("p", {
+        className: "duis-aute-irure-dolo-2 poppins-medium-old-lace-16px"
+      }, duisAuteIrureDolo), /*#__PURE__*/_react.default.createElement("div", {
+        className: "display_elements-container-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "input-display_elemen-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "value-2 poppins-medium-black-11px"
+      }, value)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-15"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-23 poppins-medium-black-11px"
+      }, label8)))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-container-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "st-container-2 poppinssemibold-regular-semi-bold-black-9px"
+      }, /*#__PURE__*/_react.default.createElement("p", {
+        className: "copyright-stylestyle2tagui_s-2"
+      }, copyrightStyleStyle2TagUi_S), /*#__PURE__*/_react.default.createElement("div", {
+        className: "privacy-policy-stylestyle2tagui_s-2"
+      }, privacyPolicyStyleStyle2TagUi_S), /*#__PURE__*/_react.default.createElement("div", {
+        className: "terms-of-service-st-2"
+      }, termsOfServiceSt)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-row-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-col-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "company-stylestyle3tagh4-2 poppins-bold-old-lace-23px"
+      }, companyStyleStyle3TagH4), /*#__PURE__*/_react.default.createElement("p", {
+        className: "description-stylestyle3tagp-2 poppins-normal-star-dust-16px"
+      }, descriptionStyleStyle3TagP), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-size-container-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-8"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherface"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-24"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x35fedd9c-5bbc-449b-91d1-5ce70336a6b0-2",
+        src: x35Fedd9C5Bbc449B91D15Ce70336A6B0
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-9"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-25"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "f582668e-f9b6-4daa-9f40-58b68ac4bee1-2",
+        src: f582668EF9B64Daa9F4058B68Ac4Bee1
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-26"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-col-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "bde720ee-9faa-4f37-a63d-bc8cb9173acd-2 border-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "c76b58bc-3b79-41ee-bfb9-8d0f6f858054-2 border-2px-woodsmoke"
+      })), /*#__PURE__*/_react.default.createElement("img", {
+        className: "d90e54ec-6bd2-4ff1-9c20-bcb6c571d34b-2",
+        src: d90E54Ec6Bd24Ff19C20Bcb6C571D34B
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-27"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-17",
+        style: {
+          backgroundImage: "url(".concat(overlapGroup, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x96c0dd6b-f6de-41cc-92cf-975ee038f9d5-2",
+        src: x96C0Dd6BF6De41Cc92Cf975Ee038F9D5
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-10"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherphon-1"
+      }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+        src: icon22Props.src,
+        className: icon22Props.className
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5-2 poppins-bold-old-lace-17px"
+      }, productsStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-7 poppins-medium-old-lace-12px"
+      }, productStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-6 poppins-medium-old-lace-12px"
+      }, productStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-6 poppins-medium-old-lace-12px"
+      }, productStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-stylestyle3tagui_l-8 poppins-medium-old-lace-12px"
+      }, productStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5-2 poppins-bold-old-lace-17px"
+      }, servicesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-6 poppins-medium-old-lace-12px"
+      }, serviceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-5 poppins-medium-old-lace-12px"
+      }, serviceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-5 poppins-medium-old-lace-12px"
+      }, serviceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-stylestyle3tagui_l-7 poppins-medium-old-lace-12px"
+      }, serviceStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stylestyletag-container-8"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "s-stylestyle3tagh5-2 poppins-bold-old-lace-17px"
+      }, resourcesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-8 poppins-medium-old-lace-12px"
+      }, resourceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-9 poppins-medium-old-lace-12px"
+      }, resourceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-10 poppins-medium-old-lace-12px"
+      }, resourceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-stylestyle3tagui_l-11 poppins-medium-old-lace-12px"
+      }, resourceStyleStyle3TagUi_L4))))));
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4-6 poppins-bold-old-lace-23px"
-  }, h6TagH41), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-8 poppins-medium-old-lace-16px"
-  }, h6), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-9"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherplay-2"
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
-    src: icon21Props.src
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-content-2"
-  }, /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock31Props.imageAssetSmallSizeDefaultStateDefa
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-col-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4-7 poppins-bold-old-lace-32px"
-  }, h6TagH42), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-4",
-    src: line1
-  }), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock32Props.imageAssetSmallSizeDefaultStateDefa,
-    className: imageBlock32Props.className
-  })), /*#__PURE__*/_react.default.createElement(_ImageBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: imageBlock33Props.imageAssetSmallSizeDefaultStateDefa,
-    className: imageBlock33Props.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group5-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "hero-2",
-    style: {
-      backgroundImage: "url(".concat(hero, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "lorem-ipsum-dolor-si-4 poppins-bold-beeswax-56px"
-  }, loremIpsumDolorSi1), /*#__PURE__*/_react.default.createElement("p", {
-    className: "hero-text-2 poppins-medium-old-lace-16px"
-  }, heroText), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-13"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-19 poppins-medium-black-12px"
-  }, label1))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "header-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-tagh6-2"
-  }, titleTagH6), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tabs-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-stateactive-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group4-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-8"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-20 poppins-medium-celeste-11px"
-  }, label2))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-8"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group3-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-8"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-21 poppins-medium-celeste-12px"
-  }, label3))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-9"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-12"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-9"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "bar-statedefault-2 border-1px-beeswax"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-22"
-  }, label4))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-10"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group1-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-8"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-21 poppins-medium-celeste-12px"
-  }, label5))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tab-item-statedefault-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group2-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "area-8"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-20 poppins-medium-celeste-11px"
-  }, label6)))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeathersear-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-20"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-13"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "a554ea44-3b35-4dcc-a06b-36a32ca49bf1 border-2-7px-old-lace"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "a05dc37f-4d7e-4e27-97af-ac3c219da6b5-2",
-    src: a05Dc37F4D7E4E2797AfAc3C219Da6B5
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-14"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-19 poppins-medium-black-12px"
-  }, label7))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tion-container-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "promotion-box-2",
-    style: {
-      backgroundImage: "url(".concat(promotionBox, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "lorem-ipsum-dolor-si-5 poppins-bold-old-lace-24px"
-  }, loremIpsumDolorSi2), /*#__PURE__*/_react.default.createElement("p", {
-    className: "we-believe-that-paym-2 poppins-medium-old-lace-16px"
-  }, weBelieveThatPaym), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-solutions-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh4-8 poppins-bold-old-lace-23px"
-  }, h6TagH43), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-5",
-    src: line2
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-container-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-10"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-21"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-14"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "x4a6c94fa-bab7-4ffe-81f3-fb5fd820a20a-2 border-2-4px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x04d47d4b-ccbf-4ab9-90d4-ba345f3c4795-2",
-    src: x04D47D4BCcbf4Ab990D4Ba345F3C4795
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "d7e55bb1-6b70-409a-9981-4b7e759e4518-2",
-    src: d7E55Bb16B70409A99814B7E759E4518
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5-2 poppins-bold-old-lace-17px"
-  }, h6TagH51), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-4 poppins-normal-white-16px"
-  }, h6TagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-8"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-22"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-15"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x986106ac-0ab9-497e-a674-dac399d729ed-2",
-    src: x986106Ac0Ab9497EA674Dac399D729Ed
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x1d7ad06b-4cac-4960-899b-406511470f66-2",
-    src: x1D7Ad06B4Cac4960899B406511470F66
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5-2 poppins-bold-old-lace-17px"
-  }, h6TagH52), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-4 poppins-normal-white-16px"
-  }, h6TagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU2.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-8"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherawar-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-23"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-16"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "x891cfd2b-8b3e-489b-8960-32f7cf9845ba-2 border-2-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "a230cb3d-e700-48a5-a760-c060353cfdfa-2",
-    src: a230Cb3DE70048A5A760C060353Cfdfa
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "h6-tagh5-2 poppins-bold-old-lace-17px"
-  }, h6TagH53), /*#__PURE__*/_react.default.createElement("p", {
-    className: "h6-tagp-4 poppins-normal-white-16px"
-  }, h6TagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: buttonDISPLAYELEMENTSLabelSIZEMEDIU3.className
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "newsletter-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "newsletter-tagh4-2 poppins-bold-old-lace-32px"
-  }, newsletterTagH4), /*#__PURE__*/_react.default.createElement("p", {
-    className: "duis-aute-irure-dolo-2 poppins-medium-old-lace-16px"
-  }, duisAuteIrureDolo), /*#__PURE__*/_react.default.createElement("div", {
-    className: "display_elements-container-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "input-display_elemen-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "value-2 poppins-medium-black-11px"
-  }, value)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-15"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-23 poppins-medium-black-11px"
-  }, label8)))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-container-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "st-container-2 poppinssemibold-regular-semi-bold-black-9px"
-  }, /*#__PURE__*/_react.default.createElement("p", {
-    className: "copyright-stylestyle2tagui_s-2"
-  }, copyrightStyleStyle2TagUi_S), /*#__PURE__*/_react.default.createElement("div", {
-    className: "privacy-policy-stylestyle2tagui_s-2"
-  }, privacyPolicyStyleStyle2TagUi_S), /*#__PURE__*/_react.default.createElement("div", {
-    className: "terms-of-service-st-2"
-  }, termsOfServiceSt)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-row-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-col-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "company-stylestyle3tagh4-2 poppins-bold-old-lace-23px"
-  }, companyStyleStyle3TagH4), /*#__PURE__*/_react.default.createElement("p", {
-    className: "description-stylestyle3tagp-2 poppins-normal-star-dust-16px"
-  }, descriptionStyleStyle3TagP), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-size-container-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-8"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherface"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-24"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x35fedd9c-5bbc-449b-91d1-5ce70336a6b0-2",
-    src: x35Fedd9C5Bbc449B91D15Ce70336A6B0
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-9"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-25"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "f582668e-f9b6-4daa-9f40-58b68ac4bee1-2",
-    src: f582668EF9B64Daa9F4058B68Ac4Bee1
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-26"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-col-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "bde720ee-9faa-4f37-a63d-bc8cb9173acd-2 border-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "c76b58bc-3b79-41ee-bfb9-8d0f6f858054-2 border-2px-woodsmoke"
-  })), /*#__PURE__*/_react.default.createElement("img", {
-    className: "d90e54ec-6bd2-4ff1-9c20-bcb6c571d34b-2",
-    src: d90E54Ec6Bd24Ff19C20Bcb6C571D34B
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-27"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-17",
-    style: {
-      backgroundImage: "url(".concat(overlapGroup, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x96c0dd6b-f6de-41cc-92cf-975ee038f9d5-2",
-    src: x96C0Dd6BF6De41Cc92Cf975Ee038F9D5
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-10"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherphon-1"
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
-    src: icon22Props.src,
-    className: icon22Props.className
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5-2 poppins-bold-old-lace-17px"
-  }, productsStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-7 poppins-medium-old-lace-12px"
-  }, productStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-6 poppins-medium-old-lace-12px"
-  }, productStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-6 poppins-medium-old-lace-12px"
-  }, productStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-stylestyle3tagui_l-8 poppins-medium-old-lace-12px"
-  }, productStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5-2 poppins-bold-old-lace-17px"
-  }, servicesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-6 poppins-medium-old-lace-12px"
-  }, serviceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-5 poppins-medium-old-lace-12px"
-  }, serviceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-5 poppins-medium-old-lace-12px"
-  }, serviceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-stylestyle3tagui_l-7 poppins-medium-old-lace-12px"
-  }, serviceStyleStyle3TagUi_L4)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stylestyletag-container-8"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "s-stylestyle3tagh5-2 poppins-bold-old-lace-17px"
-  }, resourcesStyleStyle3TagH5), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-8 poppins-medium-old-lace-12px"
-  }, resourceStyleStyle3TagUi_L1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-9 poppins-medium-old-lace-12px"
-  }, resourceStyleStyle3TagUi_L2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-10 poppins-medium-old-lace-12px"
-  }, resourceStyleStyle3TagUi_L3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-stylestyle3tagui_l-11 poppins-medium-old-lace-12px"
-  }, resourceStyleStyle3TagUi_L4))))));
-}
+  }]);
+
+  return ClassicHome42;
+}(_react.default.Component);
 
 var _default = ClassicHome42;
 exports.default = _default;
@@ -35728,13 +36715,52 @@ require("./ButtonDISPLAYELEMENTSLabelSIZEMEDIU5.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ButtonDISPLAYELEMENTSLabelSIZEMEDIU5() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-22"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-29 poppins-medium-black-29px"
-  }, "Read More"));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ButtonDISPLAYELEMENTSLabelSIZEMEDIU5 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ButtonDISPLAYELEMENTSLabelSIZEMEDIU5, _React$Component);
+
+  var _super = _createSuper(ButtonDISPLAYELEMENTSLabelSIZEMEDIU5);
+
+  function ButtonDISPLAYELEMENTSLabelSIZEMEDIU5() {
+    _classCallCheck(this, ButtonDISPLAYELEMENTSLabelSIZEMEDIU5);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ButtonDISPLAYELEMENTSLabelSIZEMEDIU5, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-22"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-29 poppins-medium-black-29px"
+      }, "Read More"));
+    }
+  }]);
+
+  return ButtonDISPLAYELEMENTSLabelSIZEMEDIU5;
+}(_react.default.Component);
 
 var _default = ButtonDISPLAYELEMENTSLabelSIZEMEDIU5;
 exports.default = _default;
@@ -35757,26 +36783,66 @@ require("./ContentBlock22.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ContentBlock22(props) {
-  var imageAssetSmallSizeDefaultStateDefa = props.imageAssetSmallSizeDefaultStateDefa,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-8 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "image-assetsmallsize-defaultstatedefault-3",
-    style: {
-      backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ContentBlock22 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ContentBlock22, _React$Component);
+
+  var _super = _createSuper(ContentBlock22);
+
+  function ContentBlock22() {
+    _classCallCheck(this, ContentBlock22);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ContentBlock22, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          imageAssetSmallSizeDefaultStateDefa = _this$props.imageAssetSmallSizeDefaultStateDefa,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-8 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "image-assetsmallsize-defaultstatedefault-3",
+        style: {
+          backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+        }
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-tagh5 poppins-bold-old-lace-35px"
+      }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "description-tagp poppins-normal-white-16px"
+      }, "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-23"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-30 poppins-medium-black-29px"
+      }, "Read More")));
     }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-tagh5 poppins-bold-old-lace-35px"
-  }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "description-tagp poppins-normal-white-16px"
-  }, "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-23"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-30 poppins-medium-black-29px"
-  }, "Read More")));
-}
+  }]);
+
+  return ContentBlock22;
+}(_react.default.Component);
 
 var _default = ContentBlock22;
 exports.default = _default;
@@ -35803,367 +36869,407 @@ require("./ClassicHome4.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ClassicHome4(props) {
-  var hero = props.hero,
-      titlePlatformMobileTagH1 = props.titlePlatformMobileTagH1,
-      heroText1 = props.heroText1,
-      label1 = props.label1,
-      blogNamePlatformMobileTagUi_L = props.blogNamePlatformMobileTagUi_L,
-      x15795489Ad54418AB44BB36F8094590B = props.x15795489Ad54418AB44BB36F8094590B,
-      c87847Ff72C84Ea5B991Caa7Bb35Dd02 = props.c87847Ff72C84Ea5B991Caa7Bb35Dd02,
-      ae93D175B7E54E548A79708Eb7E14810 = props.ae93D175B7E54E548A79708Eb7E14810,
-      typographyTagH41 = props.typographyTagH41,
-      line1 = props.line1,
-      x755E3917E37D4D0FAc024407208B75E2 = props.x755E3917E37D4D0FAc024407208B75E2,
-      x8A145B4607554D079Cf68833E2Be6E4E = props.x8A145B4607554D079Cf68833E2Be6E4E,
-      typographyTagH51 = props.typographyTagH51,
-      typographyTagP1 = props.typographyTagP1,
-      x2281B8E498B74370B56907Def5F21A66 = props.x2281B8E498B74370B56907Def5F21A66,
-      x72B59AfdAd8B4434915266476F79F081 = props.x72B59AfdAd8B4434915266476F79F081,
-      typographyTagH52 = props.typographyTagH52,
-      typographyTagP2 = props.typographyTagP2,
-      x03326Fc35Ba84363B152B0Eb53028B40 = props.x03326Fc35Ba84363B152B0Eb53028B40,
-      typographyTagH53 = props.typographyTagH53,
-      typographyTagP3 = props.typographyTagP3,
-      video = props.video,
-      iconPlay = props.iconPlay,
-      typographyTagH42 = props.typographyTagH42,
-      line2 = props.line2,
-      promotion = props.promotion,
-      titlePlatformMobileTagH4 = props.titlePlatformMobileTagH4,
-      heroText2 = props.heroText2,
-      label2 = props.label2,
-      companyPlatformMo = props.companyPlatformMo,
-      descriptionPlatfor = props.descriptionPlatfor,
-      followMePlatform1 = props.followMePlatform1,
-      followMePlatform2 = props.followMePlatform2,
-      lineStyleStyle31 = props.lineStyleStyle31,
-      lineStyleStyle32 = props.lineStyleStyle32,
-      productPlatformMo1 = props.productPlatformMo1,
-      servicePlatformMo1 = props.servicePlatformMo1,
-      productPlatformMo2 = props.productPlatformMo2,
-      servicePlatformMo2 = props.servicePlatformMo2,
-      productPlatformMo3 = props.productPlatformMo3,
-      servicePlatformMo3 = props.servicePlatformMo3,
-      productPlatformMo4 = props.productPlatformMo4,
-      servicePlatformMo4 = props.servicePlatformMo4,
-      followMePlatform3 = props.followMePlatform3,
-      line3 = props.line3,
-      resourcePlatformM1 = props.resourcePlatformM1,
-      resourcePlatformM2 = props.resourcePlatformM2,
-      resourcePlatformM3 = props.resourcePlatformM3,
-      resourcePlatformM4 = props.resourcePlatformM4,
-      x9165E48CBf00449881082F60D9A75B16 = props.x9165E48CBf00449881082F60D9A75B16,
-      x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46 = props.x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46,
-      x359Cb46644B34976A46DF6E1Da1Ffe6B = props.x359Cb46644B34976A46DF6E1Da1Ffe6B,
-      overlapGroup = props.overlapGroup,
-      c9Bed9790D6C4803A7B72C18389148Fc = props.c9Bed9790D6C4803A7B72C18389148Fc,
-      iconCall = props.iconCall,
-      privacyPolicyPlat = props.privacyPolicyPlat,
-      termsOfServicePl = props.termsOfServicePl,
-      copyrightPlatform = props.copyrightPlatform,
-      typographyTagH43 = props.typographyTagH43,
-      typography = props.typography,
-      value = props.value,
-      label3 = props.label3,
-      contentBlock221Props = props.contentBlock221Props,
-      contentBlock222Props = props.contentBlock222Props,
-      contentBlock223Props = props.contentBlock223Props;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container-center-horizontal"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "classic-home-3 screen"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group1-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "hero-3",
-    style: {
-      backgroundImage: "url(".concat(hero, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ClassicHome4 = /*#__PURE__*/function (_React$Component) {
+  _inherits(ClassicHome4, _React$Component);
+
+  var _super = _createSuper(ClassicHome4);
+
+  function ClassicHome4() {
+    _classCallCheck(this, ClassicHome4);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ClassicHome4, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          hero = _this$props.hero,
+          titlePlatformMobileTagH1 = _this$props.titlePlatformMobileTagH1,
+          heroText1 = _this$props.heroText1,
+          label1 = _this$props.label1,
+          blogNamePlatformMobileTagUi_L = _this$props.blogNamePlatformMobileTagUi_L,
+          x15795489Ad54418AB44BB36F8094590B = _this$props.x15795489Ad54418AB44BB36F8094590B,
+          c87847Ff72C84Ea5B991Caa7Bb35Dd02 = _this$props.c87847Ff72C84Ea5B991Caa7Bb35Dd02,
+          ae93D175B7E54E548A79708Eb7E14810 = _this$props.ae93D175B7E54E548A79708Eb7E14810,
+          typographyTagH41 = _this$props.typographyTagH41,
+          line1 = _this$props.line1,
+          x755E3917E37D4D0FAc024407208B75E2 = _this$props.x755E3917E37D4D0FAc024407208B75E2,
+          x8A145B4607554D079Cf68833E2Be6E4E = _this$props.x8A145B4607554D079Cf68833E2Be6E4E,
+          typographyTagH51 = _this$props.typographyTagH51,
+          typographyTagP1 = _this$props.typographyTagP1,
+          x2281B8E498B74370B56907Def5F21A66 = _this$props.x2281B8E498B74370B56907Def5F21A66,
+          x72B59AfdAd8B4434915266476F79F081 = _this$props.x72B59AfdAd8B4434915266476F79F081,
+          typographyTagH52 = _this$props.typographyTagH52,
+          typographyTagP2 = _this$props.typographyTagP2,
+          x03326Fc35Ba84363B152B0Eb53028B40 = _this$props.x03326Fc35Ba84363B152B0Eb53028B40,
+          typographyTagH53 = _this$props.typographyTagH53,
+          typographyTagP3 = _this$props.typographyTagP3,
+          video = _this$props.video,
+          iconPlay = _this$props.iconPlay,
+          typographyTagH42 = _this$props.typographyTagH42,
+          line2 = _this$props.line2,
+          promotion = _this$props.promotion,
+          titlePlatformMobileTagH4 = _this$props.titlePlatformMobileTagH4,
+          heroText2 = _this$props.heroText2,
+          label2 = _this$props.label2,
+          companyPlatformMo = _this$props.companyPlatformMo,
+          descriptionPlatfor = _this$props.descriptionPlatfor,
+          followMePlatform1 = _this$props.followMePlatform1,
+          followMePlatform2 = _this$props.followMePlatform2,
+          lineStyleStyle31 = _this$props.lineStyleStyle31,
+          lineStyleStyle32 = _this$props.lineStyleStyle32,
+          productPlatformMo1 = _this$props.productPlatformMo1,
+          servicePlatformMo1 = _this$props.servicePlatformMo1,
+          productPlatformMo2 = _this$props.productPlatformMo2,
+          servicePlatformMo2 = _this$props.servicePlatformMo2,
+          productPlatformMo3 = _this$props.productPlatformMo3,
+          servicePlatformMo3 = _this$props.servicePlatformMo3,
+          productPlatformMo4 = _this$props.productPlatformMo4,
+          servicePlatformMo4 = _this$props.servicePlatformMo4,
+          followMePlatform3 = _this$props.followMePlatform3,
+          line3 = _this$props.line3,
+          resourcePlatformM1 = _this$props.resourcePlatformM1,
+          resourcePlatformM2 = _this$props.resourcePlatformM2,
+          resourcePlatformM3 = _this$props.resourcePlatformM3,
+          resourcePlatformM4 = _this$props.resourcePlatformM4,
+          x9165E48CBf00449881082F60D9A75B16 = _this$props.x9165E48CBf00449881082F60D9A75B16,
+          x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46 = _this$props.x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46,
+          x359Cb46644B34976A46DF6E1Da1Ffe6B = _this$props.x359Cb46644B34976A46DF6E1Da1Ffe6B,
+          overlapGroup = _this$props.overlapGroup,
+          c9Bed9790D6C4803A7B72C18389148Fc = _this$props.c9Bed9790D6C4803A7B72C18389148Fc,
+          iconCall = _this$props.iconCall,
+          privacyPolicyPlat = _this$props.privacyPolicyPlat,
+          termsOfServicePl = _this$props.termsOfServicePl,
+          copyrightPlatform = _this$props.copyrightPlatform,
+          typographyTagH43 = _this$props.typographyTagH43,
+          typography = _this$props.typography,
+          value = _this$props.value,
+          label3 = _this$props.label3,
+          contentBlock221Props = _this$props.contentBlock221Props,
+          contentBlock222Props = _this$props.contentBlock222Props,
+          contentBlock223Props = _this$props.contentBlock223Props;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container-center-horizontal"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "classic-home-3 screen"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group1-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "hero-3",
+        style: {
+          backgroundImage: "url(".concat(hero, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-platform-mobiletagh1 poppins-bold-beeswax-40px"
+      }, titlePlatformMobileTagH1), /*#__PURE__*/_react.default.createElement("p", {
+        className: "hero-text-3 poppins-medium-old-lace-16px"
+      }, heroText1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-19"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-26 poppins-medium-black-29px"
+      }, label1))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "header-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "blog-name-platform-mobiletagui_l poppins-medium-old-lace-29px"
+      }, blogNamePlatformMobileTagUi_L), /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeathermenusizelargestylestyle1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-30"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x15795489-ad54-418a-b44b-b36f8094590b",
+        src: x15795489Ad54418AB44BB36F8094590B
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-item",
+        src: c87847Ff72C84Ea5B991Caa7Bb35Dd02
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-item",
+        src: ae93D175B7E54E548A79708Eb7E14810
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group4-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group2-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-solutions-3"
+      }, /*#__PURE__*/_react.default.createElement("h1", {
+        className: "typography-tagh4 poppins-bold-old-lace-57px"
+      }, typographyTagH41), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-6",
+        src: line1
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-31"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-18"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "x6ed1373d-e570-4166-b750-49d8d84a23a4-1 border-2-4px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x755e3917-e37d-4d0f-ac02-4407208b75e2-1",
+        src: x755E3917E37D4D0FAc024407208B75E2
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x8a145b46-0755-4d07-9cf6-8833e2be6e4e-1",
+        src: x8A145B4607554D079Cf68833E2Be6E4E
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh5 poppins-bold-old-lace-35px"
+      }, typographyTagH51), /*#__PURE__*/_react.default.createElement("p", {
+        className: "typography-tagp poppins-normal-white-16px"
+      }, typographyTagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-12"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-32"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-19"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x2281b8e4-98b7-4370-b569-07def5f21a66-1",
+        src: x2281B8E498B74370B56907Def5F21A66
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x72b59afd-ad8b-4434-9152-66476f79f081-1",
+        src: x72B59AfdAd8B4434915266476F79F081
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh5 poppins-bold-old-lace-35px"
+      }, typographyTagH52), /*#__PURE__*/_react.default.createElement("p", {
+        className: "typography-tagp poppins-normal-white-16px"
+      }, typographyTagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-33"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-20 border-2-4px-woodsmoke"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x03326fc3-5ba8-4363-b152-b0eb53028b40",
+        src: x03326Fc35Ba84363B152B0Eb53028B40
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh5 poppins-bold-old-lace-35px"
+      }, typographyTagH53), /*#__PURE__*/_react.default.createElement("p", {
+        className: "typography-tagp poppins-normal-white-16px"
+      }, typographyTagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "video-3",
+        style: {
+          backgroundImage: "url(".concat(video, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-12"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-34"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-play",
+        src: iconPlay
+      })))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-content-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh4-1 poppins-bold-old-lace-57px"
+      }, typographyTagH42), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-6",
+        src: line2
+      }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: contentBlock221Props.imageAssetSmallSizeDefaultStateDefa
+      }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: contentBlock222Props.imageAssetSmallSizeDefaultStateDefa,
+        className: contentBlock222Props.className
+      }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: contentBlock223Props.imageAssetSmallSizeDefaultStateDefa,
+        className: contentBlock223Props.className
+      }))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "promotion",
+        style: {
+          backgroundImage: "url(".concat(promotion, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-platform-mobiletagh4 poppins-bold-old-lace-24px"
+      }, titlePlatformMobileTagH4), /*#__PURE__*/_react.default.createElement("p", {
+        className: "hero-text-4 poppins-medium-old-lace-16px"
+      }, heroText2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-20"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-27"
+      }, label2))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group3-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "company-platform-mo poppins-bold-old-lace-35px"
+      }, companyPlatformMo), /*#__PURE__*/_react.default.createElement("p", {
+        className: "description-platfor poppins-normal-star-dust-16px"
+      }, descriptionPlatfor), /*#__PURE__*/_react.default.createElement("div", {
+        className: "follow-me-platform-container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "follow-me-platform poppins-bold-old-lace-35px"
+      }, followMePlatform1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "follow-me-platform-1"
+      }, followMePlatform2)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "line-stylestyle-container"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-stylestyle3",
+        src: lineStyleStyle31
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-stylestyle3-1",
+        src: lineStyleStyle32
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "platformmo-container-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-platform-mo poppins-medium-old-lace-29px"
+      }, productPlatformMo1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-platform-mo poppins-medium-old-lace-28px"
+      }, servicePlatformMo1)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "platformmo-container poppins-medium-old-lace-29px"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-platform-mo-1"
+      }, productPlatformMo2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-platform-mo-1"
+      }, servicePlatformMo2)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "platformmo-container poppins-medium-old-lace-29px"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-platform-mo-2"
+      }, productPlatformMo3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-platform-mo-2"
+      }, servicePlatformMo3)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "platformmo-container-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-platform-mo-3 poppins-medium-old-lace-28px"
+      }, productPlatformMo4), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-platform-mo-3 poppins-medium-old-lace-29px"
+      }, servicePlatformMo4)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "follow-me-platform-2 poppins-bold-old-lace-35px"
+      }, followMePlatform3), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-7",
+        src: line3
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-platformm poppins-medium-old-lace-29px"
+      }, resourcePlatformM1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-platformm-1"
+      }, resourcePlatformM2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-platformm-2 poppins-medium-old-lace-29px"
+      }, resourcePlatformM3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-platformm-3 poppins-medium-old-lace-29px"
+      }, resourcePlatformM4), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-size-container-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-13"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeatherface-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-35"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x9165e48c-bf00-4498-8108-2f60d9a75b16",
+        src: x9165E48CBf00449881082F60D9A75B16
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-36"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x30fb48ba-6bb7-4dc6-8bbd-08fd06a82f46",
+        src: x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-37"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "f5028f76-fbb2-4b98-baa9-50c572753658 border-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-row-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "d24cd623-19e9-4ab2-86a3-b97e97b7ddc8 border-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x359cb466-44b3-4976-a46d-f6e1da1ffe6b",
+        src: x359Cb46644B34976A46DF6E1Da1Ffe6B
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-38"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-21",
+        style: {
+          backgroundImage: "url(".concat(overlapGroup, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "c9bed979-0d6c-4803-a7b7-2c18389148fc",
+        src: c9Bed9790D6C4803A7B72C18389148Fc
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-14"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-39"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-call-1",
+        src: iconCall
+      })))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer-strip-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "pl-container"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "privacy-policy-plat"
+      }, privacyPolicyPlat), /*#__PURE__*/_react.default.createElement("div", {
+        className: "terms-of-service-pl"
+      }, termsOfServicePl)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "copyright-platform"
+      }, copyrightPlatform))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "newsletter-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh4-2 poppins-bold-old-lace-57px"
+      }, typographyTagH43), /*#__PURE__*/_react.default.createElement("p", {
+        className: "typography poppins-medium-old-lace-16px"
+      }, typography), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-row-5"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-22"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "value-3 poppins-medium-black-29px"
+      }, value)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-21"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-28 poppins-medium-black-29px"
+      }, label3)))))));
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-platform-mobiletagh1 poppins-bold-beeswax-40px"
-  }, titlePlatformMobileTagH1), /*#__PURE__*/_react.default.createElement("p", {
-    className: "hero-text-3 poppins-medium-old-lace-16px"
-  }, heroText1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-19"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-26 poppins-medium-black-29px"
-  }, label1))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "header-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "blog-name-platform-mobiletagui_l poppins-medium-old-lace-29px"
-  }, blogNamePlatformMobileTagUi_L), /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeathermenusizelargestylestyle1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-30"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x15795489-ad54-418a-b44b-b36f8094590b",
-    src: x15795489Ad54418AB44BB36F8094590B
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-item",
-    src: c87847Ff72C84Ea5B991Caa7Bb35Dd02
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-item",
-    src: ae93D175B7E54E548A79708Eb7E14810
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group4-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group2-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-solutions-3"
-  }, /*#__PURE__*/_react.default.createElement("h1", {
-    className: "typography-tagh4 poppins-bold-old-lace-57px"
-  }, typographyTagH41), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-6",
-    src: line1
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-31"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-18"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "x6ed1373d-e570-4166-b750-49d8d84a23a4-1 border-2-4px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x755e3917-e37d-4d0f-ac02-4407208b75e2-1",
-    src: x755E3917E37D4D0FAc024407208B75E2
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x8a145b46-0755-4d07-9cf6-8833e2be6e4e-1",
-    src: x8A145B4607554D079Cf68833E2Be6E4E
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh5 poppins-bold-old-lace-35px"
-  }, typographyTagH51), /*#__PURE__*/_react.default.createElement("p", {
-    className: "typography-tagp poppins-normal-white-16px"
-  }, typographyTagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-12"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-32"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-19"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x2281b8e4-98b7-4370-b569-07def5f21a66-1",
-    src: x2281B8E498B74370B56907Def5F21A66
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x72b59afd-ad8b-4434-9152-66476f79f081-1",
-    src: x72B59AfdAd8B4434915266476F79F081
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh5 poppins-bold-old-lace-35px"
-  }, typographyTagH52), /*#__PURE__*/_react.default.createElement("p", {
-    className: "typography-tagp poppins-normal-white-16px"
-  }, typographyTagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-33"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-20 border-2-4px-woodsmoke"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x03326fc3-5ba8-4363-b152-b0eb53028b40",
-    src: x03326Fc35Ba84363B152B0Eb53028B40
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh5 poppins-bold-old-lace-35px"
-  }, typographyTagH53), /*#__PURE__*/_react.default.createElement("p", {
-    className: "typography-tagp poppins-normal-white-16px"
-  }, typographyTagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, null))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "video-3",
-    style: {
-      backgroundImage: "url(".concat(video, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-12"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-34"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-play",
-    src: iconPlay
-  })))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-content-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh4-1 poppins-bold-old-lace-57px"
-  }, typographyTagH42), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-6",
-    src: line2
-  }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: contentBlock221Props.imageAssetSmallSizeDefaultStateDefa
-  }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: contentBlock222Props.imageAssetSmallSizeDefaultStateDefa,
-    className: contentBlock222Props.className
-  }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: contentBlock223Props.imageAssetSmallSizeDefaultStateDefa,
-    className: contentBlock223Props.className
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "promotion",
-    style: {
-      backgroundImage: "url(".concat(promotion, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-platform-mobiletagh4 poppins-bold-old-lace-24px"
-  }, titlePlatformMobileTagH4), /*#__PURE__*/_react.default.createElement("p", {
-    className: "hero-text-4 poppins-medium-old-lace-16px"
-  }, heroText2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-20"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-27"
-  }, label2))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group3-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "company-platform-mo poppins-bold-old-lace-35px"
-  }, companyPlatformMo), /*#__PURE__*/_react.default.createElement("p", {
-    className: "description-platfor poppins-normal-star-dust-16px"
-  }, descriptionPlatfor), /*#__PURE__*/_react.default.createElement("div", {
-    className: "follow-me-platform-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "follow-me-platform poppins-bold-old-lace-35px"
-  }, followMePlatform1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "follow-me-platform-1"
-  }, followMePlatform2)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "line-stylestyle-container"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-stylestyle3",
-    src: lineStyleStyle31
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-stylestyle3-1",
-    src: lineStyleStyle32
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "platformmo-container-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-platform-mo poppins-medium-old-lace-29px"
-  }, productPlatformMo1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-platform-mo poppins-medium-old-lace-28px"
-  }, servicePlatformMo1)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "platformmo-container poppins-medium-old-lace-29px"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-platform-mo-1"
-  }, productPlatformMo2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-platform-mo-1"
-  }, servicePlatformMo2)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "platformmo-container poppins-medium-old-lace-29px"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-platform-mo-2"
-  }, productPlatformMo3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-platform-mo-2"
-  }, servicePlatformMo3)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "platformmo-container-2"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-platform-mo-3 poppins-medium-old-lace-28px"
-  }, productPlatformMo4), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-platform-mo-3 poppins-medium-old-lace-29px"
-  }, servicePlatformMo4)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "follow-me-platform-2 poppins-bold-old-lace-35px"
-  }, followMePlatform3), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-7",
-    src: line3
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-platformm poppins-medium-old-lace-29px"
-  }, resourcePlatformM1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-platformm-1"
-  }, resourcePlatformM2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-platformm-2 poppins-medium-old-lace-29px"
-  }, resourcePlatformM3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-platformm-3 poppins-medium-old-lace-29px"
-  }, resourcePlatformM4), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-size-container-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-13"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeatherface-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-35"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x9165e48c-bf00-4498-8108-2f60d9a75b16",
-    src: x9165E48CBf00449881082F60D9A75B16
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-36"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x30fb48ba-6bb7-4dc6-8bbd-08fd06a82f46",
-    src: x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-37"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "f5028f76-fbb2-4b98-baa9-50c572753658 border-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-row-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "d24cd623-19e9-4ab2-86a3-b97e97b7ddc8 border-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x359cb466-44b3-4976-a46d-f6e1da1ffe6b",
-    src: x359Cb46644B34976A46DF6E1Da1Ffe6B
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-38"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-21",
-    style: {
-      backgroundImage: "url(".concat(overlapGroup, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "c9bed979-0d6c-4803-a7b7-2c18389148fc",
-    src: c9Bed9790D6C4803A7B72C18389148Fc
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-14"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-39"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-call-1",
-    src: iconCall
-  })))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-strip-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "pl-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "privacy-policy-plat"
-  }, privacyPolicyPlat), /*#__PURE__*/_react.default.createElement("div", {
-    className: "terms-of-service-pl"
-  }, termsOfServicePl)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "copyright-platform"
-  }, copyrightPlatform))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "newsletter-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh4-2 poppins-bold-old-lace-57px"
-  }, typographyTagH43), /*#__PURE__*/_react.default.createElement("p", {
-    className: "typography poppins-medium-old-lace-16px"
-  }, typography), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-row-5"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-22"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "value-3 poppins-medium-black-29px"
-  }, value)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-21"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-28 poppins-medium-black-29px"
-  }, label3)))))));
-}
+  }]);
+
+  return ClassicHome4;
+}(_react.default.Component);
 
 var _default = ClassicHome4;
 exports.default = _default;
@@ -36186,26 +37292,66 @@ require("./ContentBlock.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ContentBlock(props) {
-  var imageAssetSmallSizeDefaultStateDefa = props.imageAssetSmallSizeDefaultStateDefa,
-      className = props.className;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-14 ".concat(className || "")
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "image-assetsmallsize-defaultstatedefault-4",
-    style: {
-      backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ContentBlock = /*#__PURE__*/function (_React$Component) {
+  _inherits(ContentBlock, _React$Component);
+
+  var _super = _createSuper(ContentBlock);
+
+  function ContentBlock() {
+    _classCallCheck(this, ContentBlock);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ContentBlock, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          imageAssetSmallSizeDefaultStateDefa = _this$props.imageAssetSmallSizeDefaultStateDefa,
+          className = _this$props.className;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-14 ".concat(className || "")
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "image-assetsmallsize-defaultstatedefault-4",
+        style: {
+          backgroundImage: "url(".concat(imageAssetSmallSizeDefaultStateDefa, ")")
+        }
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-tagh5-1 poppins-bold-old-lace-24px"
+      }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
+        className: "description-tagp-1 poppins-normal-white-16px"
+      }, "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-27"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-34 poppins-medium-black-16px"
+      }, "Read More")));
     }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-tagh5-1 poppins-bold-old-lace-24px"
-  }, "Lorem Ipsum Dolor"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "description-tagp-1 poppins-normal-white-16px"
-  }, "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-27"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-34 poppins-medium-black-16px"
-  }, "Read More")));
-}
+  }]);
+
+  return ContentBlock;
+}(_react.default.Component);
 
 var _default = ContentBlock;
 exports.default = _default;
@@ -36236,346 +37382,386 @@ require("./ClassicHome.sass");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ClassicHome(props) {
-  var hero = props.hero,
-      titlePlatformMobileTagH1 = props.titlePlatformMobileTagH1,
-      heroText1 = props.heroText1,
-      label1 = props.label1,
-      blogNamePlatformMobileTagUi_L = props.blogNamePlatformMobileTagUi_L,
-      x15795489Ad54418AB44BB36F8094590B = props.x15795489Ad54418AB44BB36F8094590B,
-      c87847Ff72C84Ea5B991Caa7Bb35Dd02 = props.c87847Ff72C84Ea5B991Caa7Bb35Dd02,
-      ae93D175B7E54E548A79708Eb7E14810 = props.ae93D175B7E54E548A79708Eb7E14810,
-      typographyTagH41 = props.typographyTagH41,
-      line1 = props.line1,
-      typographyTagH42 = props.typographyTagH42,
-      line2 = props.line2,
-      typographyTagH51 = props.typographyTagH51,
-      typographyTagP1 = props.typographyTagP1,
-      typographyTagH52 = props.typographyTagH52,
-      typographyTagP2 = props.typographyTagP2,
-      x03326Fc35Ba84363B152B0Eb53028B40 = props.x03326Fc35Ba84363B152B0Eb53028B40,
-      typographyTagH53 = props.typographyTagH53,
-      typographyTagP3 = props.typographyTagP3,
-      video = props.video,
-      d6Bb394E0Da5478CAe9D35566C25684D = props.d6Bb394E0Da5478CAe9D35566C25684D,
-      promotion = props.promotion,
-      titlePlatformMobileTagH4 = props.titlePlatformMobileTagH4,
-      heroText2 = props.heroText2,
-      label2 = props.label2,
-      typographyTagH43 = props.typographyTagH43,
-      typography = props.typography,
-      value = props.value,
-      label3 = props.label3,
-      companyPlatformMo = props.companyPlatformMo,
-      descriptionPlatfor = props.descriptionPlatfor,
-      followMePlatform1 = props.followMePlatform1,
-      followMePlatform2 = props.followMePlatform2,
-      lineStyleStyle31 = props.lineStyleStyle31,
-      lineStyleStyle32 = props.lineStyleStyle32,
-      productPlatformMo1 = props.productPlatformMo1,
-      servicePlatformMo1 = props.servicePlatformMo1,
-      productPlatformMo2 = props.productPlatformMo2,
-      servicePlatformMo2 = props.servicePlatformMo2,
-      productPlatformMo3 = props.productPlatformMo3,
-      servicePlatformMo3 = props.servicePlatformMo3,
-      productPlatformMo4 = props.productPlatformMo4,
-      servicePlatformMo4 = props.servicePlatformMo4,
-      followMePlatform3 = props.followMePlatform3,
-      line3 = props.line3,
-      resourcePlatformM1 = props.resourcePlatformM1,
-      resourcePlatformM2 = props.resourcePlatformM2,
-      resourcePlatformM3 = props.resourcePlatformM3,
-      resourcePlatformM4 = props.resourcePlatformM4,
-      x9165E48CBf00449881082F60D9A75B16 = props.x9165E48CBf00449881082F60D9A75B16,
-      x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46 = props.x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46,
-      x359Cb46644B34976A46DF6E1Da1Ffe6B = props.x359Cb46644B34976A46DF6E1Da1Ffe6B,
-      overlapGroup = props.overlapGroup,
-      c9Bed9790D6C4803A7B72C18389148Fc = props.c9Bed9790D6C4803A7B72C18389148Fc,
-      x13825A82728E4Ea19671402Ba312690B = props.x13825A82728E4Ea19671402Ba312690B,
-      privacyPolicyPlat = props.privacyPolicyPlat,
-      termsOfServicePl = props.termsOfServicePl,
-      copyrightPlatform = props.copyrightPlatform,
-      contentBlock1Props = props.contentBlock1Props,
-      contentBlock2Props = props.contentBlock2Props,
-      contentBlock3Props = props.contentBlock3Props,
-      circleButtonSIZELARGESTATEDEFAULTST = props.circleButtonSIZELARGESTATEDEFAULTST,
-      contentBlock1Props2 = props.contentBlock1Props2,
-      circleButtonSIZELARGESTATEDEFAULTST2 = props.circleButtonSIZELARGESTATEDEFAULTST2,
-      contentBlock1Props3 = props.contentBlock1Props3,
-      contentBlock1Props4 = props.contentBlock1Props4;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container-center-horizontal"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "classic-home-4 screen"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group1-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "hero-4",
-    style: {
-      backgroundImage: "url(".concat(hero, ")")
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ClassicHome = /*#__PURE__*/function (_React$Component) {
+  _inherits(ClassicHome, _React$Component);
+
+  var _super = _createSuper(ClassicHome);
+
+  function ClassicHome() {
+    _classCallCheck(this, ClassicHome);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ClassicHome, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          hero = _this$props.hero,
+          titlePlatformMobileTagH1 = _this$props.titlePlatformMobileTagH1,
+          heroText1 = _this$props.heroText1,
+          label1 = _this$props.label1,
+          blogNamePlatformMobileTagUi_L = _this$props.blogNamePlatformMobileTagUi_L,
+          x15795489Ad54418AB44BB36F8094590B = _this$props.x15795489Ad54418AB44BB36F8094590B,
+          c87847Ff72C84Ea5B991Caa7Bb35Dd02 = _this$props.c87847Ff72C84Ea5B991Caa7Bb35Dd02,
+          ae93D175B7E54E548A79708Eb7E14810 = _this$props.ae93D175B7E54E548A79708Eb7E14810,
+          typographyTagH41 = _this$props.typographyTagH41,
+          line1 = _this$props.line1,
+          typographyTagH42 = _this$props.typographyTagH42,
+          line2 = _this$props.line2,
+          typographyTagH51 = _this$props.typographyTagH51,
+          typographyTagP1 = _this$props.typographyTagP1,
+          typographyTagH52 = _this$props.typographyTagH52,
+          typographyTagP2 = _this$props.typographyTagP2,
+          x03326Fc35Ba84363B152B0Eb53028B40 = _this$props.x03326Fc35Ba84363B152B0Eb53028B40,
+          typographyTagH53 = _this$props.typographyTagH53,
+          typographyTagP3 = _this$props.typographyTagP3,
+          video = _this$props.video,
+          d6Bb394E0Da5478CAe9D35566C25684D = _this$props.d6Bb394E0Da5478CAe9D35566C25684D,
+          promotion = _this$props.promotion,
+          titlePlatformMobileTagH4 = _this$props.titlePlatformMobileTagH4,
+          heroText2 = _this$props.heroText2,
+          label2 = _this$props.label2,
+          typographyTagH43 = _this$props.typographyTagH43,
+          typography = _this$props.typography,
+          value = _this$props.value,
+          label3 = _this$props.label3,
+          companyPlatformMo = _this$props.companyPlatformMo,
+          descriptionPlatfor = _this$props.descriptionPlatfor,
+          followMePlatform1 = _this$props.followMePlatform1,
+          followMePlatform2 = _this$props.followMePlatform2,
+          lineStyleStyle31 = _this$props.lineStyleStyle31,
+          lineStyleStyle32 = _this$props.lineStyleStyle32,
+          productPlatformMo1 = _this$props.productPlatformMo1,
+          servicePlatformMo1 = _this$props.servicePlatformMo1,
+          productPlatformMo2 = _this$props.productPlatformMo2,
+          servicePlatformMo2 = _this$props.servicePlatformMo2,
+          productPlatformMo3 = _this$props.productPlatformMo3,
+          servicePlatformMo3 = _this$props.servicePlatformMo3,
+          productPlatformMo4 = _this$props.productPlatformMo4,
+          servicePlatformMo4 = _this$props.servicePlatformMo4,
+          followMePlatform3 = _this$props.followMePlatform3,
+          line3 = _this$props.line3,
+          resourcePlatformM1 = _this$props.resourcePlatformM1,
+          resourcePlatformM2 = _this$props.resourcePlatformM2,
+          resourcePlatformM3 = _this$props.resourcePlatformM3,
+          resourcePlatformM4 = _this$props.resourcePlatformM4,
+          x9165E48CBf00449881082F60D9A75B16 = _this$props.x9165E48CBf00449881082F60D9A75B16,
+          x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46 = _this$props.x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46,
+          x359Cb46644B34976A46DF6E1Da1Ffe6B = _this$props.x359Cb46644B34976A46DF6E1Da1Ffe6B,
+          overlapGroup = _this$props.overlapGroup,
+          c9Bed9790D6C4803A7B72C18389148Fc = _this$props.c9Bed9790D6C4803A7B72C18389148Fc,
+          x13825A82728E4Ea19671402Ba312690B = _this$props.x13825A82728E4Ea19671402Ba312690B,
+          privacyPolicyPlat = _this$props.privacyPolicyPlat,
+          termsOfServicePl = _this$props.termsOfServicePl,
+          copyrightPlatform = _this$props.copyrightPlatform,
+          contentBlock1Props = _this$props.contentBlock1Props,
+          contentBlock2Props = _this$props.contentBlock2Props,
+          contentBlock3Props = _this$props.contentBlock3Props,
+          circleButtonSIZELARGESTATEDEFAULTST = _this$props.circleButtonSIZELARGESTATEDEFAULTST,
+          contentBlock1Props2 = _this$props.contentBlock1Props2,
+          circleButtonSIZELARGESTATEDEFAULTST2 = _this$props.circleButtonSIZELARGESTATEDEFAULTST2,
+          contentBlock1Props3 = _this$props.contentBlock1Props3,
+          contentBlock1Props4 = _this$props.contentBlock1Props4;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container-center-horizontal"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "classic-home-4 screen"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group1-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "hero-4",
+        style: {
+          backgroundImage: "url(".concat(hero, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-platform-mobiletagh1-1 poppins-bold-beeswax-40px"
+      }, titlePlatformMobileTagH1), /*#__PURE__*/_react.default.createElement("p", {
+        className: "hero-text-5 poppins-medium-old-lace-16px"
+      }, heroText1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-24"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-31 poppins-medium-black-16px"
+      }, label1))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "header-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "blog-name-platform-mobiletagui_l-1 poppins-medium-old-lace-18px"
+      }, blogNamePlatformMobileTagUi_L), /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeathermenusizelargestylestyle1-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-40"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x15795489-ad54-418a-b44b-b36f8094590b-1",
+        src: x15795489Ad54418AB44BB36F8094590B
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-item-1",
+        src: c87847Ff72C84Ea5B991Caa7Bb35Dd02
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-item-1",
+        src: ae93D175B7E54E548A79708Eb7E14810
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-content-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh4-3 poppins-bold-old-lace-32px"
+      }, typographyTagH41), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-8",
+        src: line1
+      }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: contentBlock1Props.imageAssetSmallSizeDefaultStateDefa
+      }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: contentBlock2Props.imageAssetSmallSizeDefaultStateDefa,
+        className: contentBlock2Props.className
+      }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
+        imageAssetSmallSizeDefaultStateDefa: contentBlock3Props.imageAssetSmallSizeDefaultStateDefa,
+        className: contentBlock3Props.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group2-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "featured-solutions-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh4-4 poppins-bold-old-lace-32px"
+      }, typographyTagH42), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-8",
+        src: line2
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-12"
+      }, /*#__PURE__*/_react.default.createElement(_CircleButtonSIZELARGESTATEDEFAULTST.default, {
+        x8A145B4607554D079Cf68833E2Be6E4E: circleButtonSIZELARGESTATEDEFAULTST.x8A145B4607554D079Cf68833E2Be6E4E,
+        className: circleButtonSIZELARGESTATEDEFAULTST.className
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh5-1 poppins-bold-old-lace-24px"
+      }, typographyTagH51), /*#__PURE__*/_react.default.createElement("p", {
+        className: "typography-tagp-1 poppins-normal-white-16px"
+      }, typographyTagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: contentBlock1Props2.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-11"
+      }, /*#__PURE__*/_react.default.createElement(_CircleButtonSIZELARGESTATEDEFAULTST2.default, {
+        x2281B8E498B74370B56907Def5F21A66: circleButtonSIZELARGESTATEDEFAULTST2.x2281B8E498B74370B56907Def5F21A66,
+        className: circleButtonSIZELARGESTATEDEFAULTST2.className
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh5-1 poppins-bold-old-lace-24px"
+      }, typographyTagH52), /*#__PURE__*/_react.default.createElement("p", {
+        className: "typography-tagp-1 poppins-normal-white-16px"
+      }, typographyTagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: contentBlock1Props3.className
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content-block-11"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizela-13"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeathercomp"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-41"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-23 border-2-4px-woodsmoke"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x03326fc3-5ba8-4363-b152-b0eb53028b40-1",
+        src: x03326Fc35Ba84363B152B0Eb53028B40
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh5-1 poppins-bold-old-lace-24px"
+      }, typographyTagH53), /*#__PURE__*/_react.default.createElement("p", {
+        className: "typography-tagp-1 poppins-normal-white-16px"
+      }, typographyTagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
+        className: contentBlock1Props4.className
+      }))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "video-4",
+        style: {
+          backgroundImage: "url(".concat(video, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-16"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-42"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-play-1",
+        src: d6Bb394E0Da5478CAe9D35566C25684D
+      })))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "promotion-1",
+        style: {
+          backgroundImage: "url(".concat(promotion, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "title-platform-mobiletagh4-1 poppins-bold-old-lace-24px"
+      }, titlePlatformMobileTagH4), /*#__PURE__*/_react.default.createElement("p", {
+        className: "hero-text-6 poppins-medium-old-lace-16px"
+      }, heroText2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-25"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-32"
+      }, label2))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "newsletter-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "typography-tagh4-5 poppins-bold-old-lace-32px"
+      }, typographyTagH43), /*#__PURE__*/_react.default.createElement("p", {
+        className: "typography-1 poppins-medium-old-lace-16px"
+      }, typography), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-row-6"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-24"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "value-4 poppins-medium-black-16px"
+      }, value)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "button-display_eleme-26"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "label-33 poppins-medium-black-16px"
+      }, label3)))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer-3"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "company-platform-mo-1 poppins-bold-old-lace-24px"
+      }, companyPlatformMo), /*#__PURE__*/_react.default.createElement("p", {
+        className: "description-platfor-1 poppins-normal-star-dust-16px"
+      }, descriptionPlatfor), /*#__PURE__*/_react.default.createElement("div", {
+        className: "follow-me-platform-container-1 poppins-bold-old-lace-20px"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "follow-me-platform-3"
+      }, followMePlatform1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "follow-me-platform-4"
+      }, followMePlatform2)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "line-stylestyle-container-1"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-stylestyle3-2",
+        src: lineStyleStyle31
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-stylestyle3-3",
+        src: lineStyleStyle32
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "platformmo-container-4 poppins-medium-old-lace-18px"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-platform-mo-5"
+      }, productPlatformMo1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-platform-mo-5"
+      }, servicePlatformMo1)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "platformmo-container-3 poppins-medium-old-lace-18px"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-platform-mo-4"
+      }, productPlatformMo2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-platform-mo-4"
+      }, servicePlatformMo2)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "platformmo-container-3 poppins-medium-old-lace-18px"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-platform-mo-4"
+      }, productPlatformMo3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-platform-mo-4"
+      }, servicePlatformMo3)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "platformmo-container-5 poppins-medium-old-lace-18px"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "product-platform-mo-6"
+      }, productPlatformMo4), /*#__PURE__*/_react.default.createElement("div", {
+        className: "service-platform-mo-6"
+      }, servicePlatformMo4)), /*#__PURE__*/_react.default.createElement("div", {
+        className: "follow-me-platform-5 poppins-bold-old-lace-20px"
+      }, followMePlatform3), /*#__PURE__*/_react.default.createElement("img", {
+        className: "line-9",
+        src: line3
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-platformm-4 poppins-medium-old-lace-18px"
+      }, resourcePlatformM1), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-platformm-5 poppins-medium-old-lace-18px"
+      }, resourcePlatformM2), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-platformm-6 poppins-medium-old-lace-18px"
+      }, resourcePlatformM3), /*#__PURE__*/_react.default.createElement("div", {
+        className: "resource-platformm-7 poppins-medium-old-lace-18px"
+      }, resourcePlatformM4), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-size-container-4"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-17"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-43"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x9165e48c-bf00-4498-8108-2f60d9a75b16-1",
+        src: x9165E48CBf00449881082F60D9A75B16
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-15"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-44"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "x30fb48ba-6bb7-4dc6-8bbd-08fd06a82f46-1",
+        src: x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46
+      })))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-15"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-45"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "f5028f76-fbb2-4b98-baa9-50c572753658-1 border-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-row-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "d24cd623-19e9-4ab2-86a3-b97e97b7ddc8-1 border-2px-woodsmoke"
+      }), /*#__PURE__*/_react.default.createElement("img", {
+        className: "x359cb466-44b3-4976-a46d-f6e1da1ffe6b-1",
+        src: x359Cb46644B34976A46DF6E1Da1Ffe6B
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-15"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-46"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "overlap-group-25",
+        style: {
+          backgroundImage: "url(".concat(overlapGroup, ")")
+        }
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "c9bed979-0d6c-4803-a7b7-2c18389148fc-1",
+        src: c9Bed9790D6C4803A7B72C18389148Fc
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "circle-button-sizeme-18"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-iconfeather-7"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "icon-47"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "icon-call-2",
+        src: x13825A82728E4Ea19671402Ba312690B
+      })))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "footer-strip-2 poppinssemibold-regular-semi-bold-black-13px"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "pl-container-1"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "privacy-policy-plat-1"
+      }, privacyPolicyPlat), /*#__PURE__*/_react.default.createElement("div", {
+        className: "terms-of-service-pl-1"
+      }, termsOfServicePl)), /*#__PURE__*/_react.default.createElement("p", {
+        className: "copyright-platform-1"
+      }, copyrightPlatform)))));
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-platform-mobiletagh1-1 poppins-bold-beeswax-40px"
-  }, titlePlatformMobileTagH1), /*#__PURE__*/_react.default.createElement("p", {
-    className: "hero-text-5 poppins-medium-old-lace-16px"
-  }, heroText1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-24"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-31 poppins-medium-black-16px"
-  }, label1))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "header-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "blog-name-platform-mobiletagui_l-1 poppins-medium-old-lace-18px"
-  }, blogNamePlatformMobileTagUi_L), /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeathermenusizelargestylestyle1-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-40"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x15795489-ad54-418a-b44b-b36f8094590b-1",
-    src: x15795489Ad54418AB44BB36F8094590B
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-item-1",
-    src: c87847Ff72C84Ea5B991Caa7Bb35Dd02
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-item-1",
-    src: ae93D175B7E54E548A79708Eb7E14810
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-content-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh4-3 poppins-bold-old-lace-32px"
-  }, typographyTagH41), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-8",
-    src: line1
-  }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: contentBlock1Props.imageAssetSmallSizeDefaultStateDefa
-  }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: contentBlock2Props.imageAssetSmallSizeDefaultStateDefa,
-    className: contentBlock2Props.className
-  }), /*#__PURE__*/_react.default.createElement(_ContentBlock.default, {
-    imageAssetSmallSizeDefaultStateDefa: contentBlock3Props.imageAssetSmallSizeDefaultStateDefa,
-    className: contentBlock3Props.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group2-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "featured-solutions-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh4-4 poppins-bold-old-lace-32px"
-  }, typographyTagH42), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-8",
-    src: line2
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-12"
-  }, /*#__PURE__*/_react.default.createElement(_CircleButtonSIZELARGESTATEDEFAULTST.default, {
-    x8A145B4607554D079Cf68833E2Be6E4E: circleButtonSIZELARGESTATEDEFAULTST.x8A145B4607554D079Cf68833E2Be6E4E,
-    className: circleButtonSIZELARGESTATEDEFAULTST.className
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh5-1 poppins-bold-old-lace-24px"
-  }, typographyTagH51), /*#__PURE__*/_react.default.createElement("p", {
-    className: "typography-tagp-1 poppins-normal-white-16px"
-  }, typographyTagP1), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: contentBlock1Props2.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-11"
-  }, /*#__PURE__*/_react.default.createElement(_CircleButtonSIZELARGESTATEDEFAULTST2.default, {
-    x2281B8E498B74370B56907Def5F21A66: circleButtonSIZELARGESTATEDEFAULTST2.x2281B8E498B74370B56907Def5F21A66,
-    className: circleButtonSIZELARGESTATEDEFAULTST2.className
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh5-1 poppins-bold-old-lace-24px"
-  }, typographyTagH52), /*#__PURE__*/_react.default.createElement("p", {
-    className: "typography-tagp-1 poppins-normal-white-16px"
-  }, typographyTagP2), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: contentBlock1Props3.className
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "content-block-11"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizela-13"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeathercomp"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-41"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-23 border-2-4px-woodsmoke"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x03326fc3-5ba8-4363-b152-b0eb53028b40-1",
-    src: x03326Fc35Ba84363B152B0Eb53028B40
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh5-1 poppins-bold-old-lace-24px"
-  }, typographyTagH53), /*#__PURE__*/_react.default.createElement("p", {
-    className: "typography-tagp-1 poppins-normal-white-16px"
-  }, typographyTagP3), /*#__PURE__*/_react.default.createElement(_ButtonDISPLAYELEMENTSLabelSIZEMEDIU.default, {
-    className: contentBlock1Props4.className
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "video-4",
-    style: {
-      backgroundImage: "url(".concat(video, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-16"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-42"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-play-1",
-    src: d6Bb394E0Da5478CAe9D35566C25684D
-  })))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "promotion-1",
-    style: {
-      backgroundImage: "url(".concat(promotion, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "title-platform-mobiletagh4-1 poppins-bold-old-lace-24px"
-  }, titlePlatformMobileTagH4), /*#__PURE__*/_react.default.createElement("p", {
-    className: "hero-text-6 poppins-medium-old-lace-16px"
-  }, heroText2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-25"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-32"
-  }, label2))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "newsletter-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "typography-tagh4-5 poppins-bold-old-lace-32px"
-  }, typographyTagH43), /*#__PURE__*/_react.default.createElement("p", {
-    className: "typography-1 poppins-medium-old-lace-16px"
-  }, typography), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-row-6"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-24"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "value-4 poppins-medium-black-16px"
-  }, value)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "button-display_eleme-26"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "label-33 poppins-medium-black-16px"
-  }, label3)))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "company-platform-mo-1 poppins-bold-old-lace-24px"
-  }, companyPlatformMo), /*#__PURE__*/_react.default.createElement("p", {
-    className: "description-platfor-1 poppins-normal-star-dust-16px"
-  }, descriptionPlatfor), /*#__PURE__*/_react.default.createElement("div", {
-    className: "follow-me-platform-container-1 poppins-bold-old-lace-20px"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "follow-me-platform-3"
-  }, followMePlatform1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "follow-me-platform-4"
-  }, followMePlatform2)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "line-stylestyle-container-1"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-stylestyle3-2",
-    src: lineStyleStyle31
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-stylestyle3-3",
-    src: lineStyleStyle32
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "platformmo-container-4 poppins-medium-old-lace-18px"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-platform-mo-5"
-  }, productPlatformMo1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-platform-mo-5"
-  }, servicePlatformMo1)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "platformmo-container-3 poppins-medium-old-lace-18px"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-platform-mo-4"
-  }, productPlatformMo2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-platform-mo-4"
-  }, servicePlatformMo2)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "platformmo-container-3 poppins-medium-old-lace-18px"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-platform-mo-4"
-  }, productPlatformMo3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-platform-mo-4"
-  }, servicePlatformMo3)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "platformmo-container-5 poppins-medium-old-lace-18px"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "product-platform-mo-6"
-  }, productPlatformMo4), /*#__PURE__*/_react.default.createElement("div", {
-    className: "service-platform-mo-6"
-  }, servicePlatformMo4)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "follow-me-platform-5 poppins-bold-old-lace-20px"
-  }, followMePlatform3), /*#__PURE__*/_react.default.createElement("img", {
-    className: "line-9",
-    src: line3
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-platformm-4 poppins-medium-old-lace-18px"
-  }, resourcePlatformM1), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-platformm-5 poppins-medium-old-lace-18px"
-  }, resourcePlatformM2), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-platformm-6 poppins-medium-old-lace-18px"
-  }, resourcePlatformM3), /*#__PURE__*/_react.default.createElement("div", {
-    className: "resource-platformm-7 poppins-medium-old-lace-18px"
-  }, resourcePlatformM4), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-size-container-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-17"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-43"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x9165e48c-bf00-4498-8108-2f60d9a75b16-1",
-    src: x9165E48CBf00449881082F60D9A75B16
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-15"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-44"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "x30fb48ba-6bb7-4dc6-8bbd-08fd06a82f46-1",
-    src: x30Fb48Ba6Bb74Dc68Bbd08Fd06A82F46
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-15"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-45"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "f5028f76-fbb2-4b98-baa9-50c572753658-1 border-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex-row-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "d24cd623-19e9-4ab2-86a3-b97e97b7ddc8-1 border-2px-woodsmoke"
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    className: "x359cb466-44b3-4976-a46d-f6e1da1ffe6b-1",
-    src: x359Cb46644B34976A46DF6E1Da1Ffe6B
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-15"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-46"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "overlap-group-25",
-    style: {
-      backgroundImage: "url(".concat(overlapGroup, ")")
-    }
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "c9bed979-0d6c-4803-a7b7-2c18389148fc-1",
-    src: c9Bed9790D6C4803A7B72C18389148Fc
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "circle-button-sizeme-18"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-iconfeather-7"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "icon-47"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "icon-call-2",
-    src: x13825A82728E4Ea19671402Ba312690B
-  })))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-strip-2 poppinssemibold-regular-semi-bold-black-13px"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "pl-container-1"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "privacy-policy-plat-1"
-  }, privacyPolicyPlat), /*#__PURE__*/_react.default.createElement("div", {
-    className: "terms-of-service-pl-1"
-  }, termsOfServicePl)), /*#__PURE__*/_react.default.createElement("p", {
-    className: "copyright-platform-1"
-  }, copyrightPlatform)))));
-}
+  }]);
+
+  return ClassicHome;
+}(_react.default.Component);
 
 var _default = ClassicHome;
 exports.default = _default;
@@ -36605,19 +37791,58 @@ var _ClassicHome5 = _interopRequireDefault(require("./components/ClassicHome"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function App() {
-  return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/:path(|classic-home)"
-  }, /*#__PURE__*/_react.default.createElement(_ClassicHome.default, classicHome22Data)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/classic-home-1"
-  }, /*#__PURE__*/_react.default.createElement(_ClassicHome2.default, classicHome32Data)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/classic-home-2"
-  }, /*#__PURE__*/_react.default.createElement(_ClassicHome3.default, classicHome42Data)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/classic-home-3"
-  }, /*#__PURE__*/_react.default.createElement(_ClassicHome4.default, classicHome4Data)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/classic-home-4"
-  }, /*#__PURE__*/_react.default.createElement(_ClassicHome5.default, classicHomeData))));
-}
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var App = /*#__PURE__*/function (_React$Component) {
+  _inherits(App, _React$Component);
+
+  var _super = _createSuper(App);
+
+  function App() {
+    _classCallCheck(this, App);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(App, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/:path(|classic-home)"
+      }, /*#__PURE__*/_react.default.createElement(_ClassicHome.default, classicHome22Data)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/classic-home-1"
+      }, /*#__PURE__*/_react.default.createElement(_ClassicHome2.default, classicHome32Data)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/classic-home-2"
+      }, /*#__PURE__*/_react.default.createElement(_ClassicHome3.default, classicHome42Data)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/classic-home-3"
+      }, /*#__PURE__*/_react.default.createElement(_ClassicHome4.default, classicHome4Data)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/classic-home-4"
+      }, /*#__PURE__*/_react.default.createElement(_ClassicHome5.default, classicHomeData))));
+    }
+  }]);
+
+  return App;
+}(_react.default.Component);
 
 var _default = App;
 exports.default = _default;
@@ -37125,7 +38350,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45517" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43503" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
