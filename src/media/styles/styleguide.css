@@ -1,0 +1,61 @@
+/* :root { 
+  --santas-gray: #9da1b2;
+  --shark: #24262b;
+  --white: #ffffff;
+ 
+  --font-size-l: 18px;
+  --font-size-l3: 24px;
+  --font-size-m: 16px;
+  --font-size-xxl3: 32px;
+  --font-size-xxs2: 13px;
+  --font-size-xxxl: 56px;
+ 
+  --font-family-noto_sans: "Noto Sans", Helvetica;
+}
+.notosans-semi-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosans-semi-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosans-medium-santas-gray-16px {
+  color: var(--santas-gray);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.notosans-bold-white-32px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-xxl3);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.notosans-bold-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-l3);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.notosans-bold-white-13px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans);
+  font-size: var(--font-size-xxs2);
+  font-style: normal;
+  font-weight: 700;
+} */
