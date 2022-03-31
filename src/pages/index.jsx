@@ -42,7 +42,7 @@ const Home = () => {
    
 
       {/* Footer Section */}
-      <div className="footer-container">
+      {/* <div className="footer-container">
         <div className="footer-info">
           <h1>Paulo</h1>
           <p>Based in Fresno California</p>
@@ -65,7 +65,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
