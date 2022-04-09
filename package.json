@@ -1,49 +1,25 @@
 {
-  "name": "portfolio-react",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@brainhubeu/react-carousel": "^2.0.4",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "components": "^0.1.0",
-    "parcel-bundler": "^1.12.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.0",
-    "styled": "^1.0.0",
-    "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.2"
+  "workspaces": {
+    "packages": [
+      "api",
+      "web",
+      "packages/*"
+    ]
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@redwoodjs/core": "1.0.0"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "@redwoodjs/eslint-config",
+    "root": true
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "engines": {
+    "node": ">=14.19 <=16.x",
+    "yarn": ">=1.15"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  "prisma": {
+    "seed": "yarn rw exec seed"
+  },
+  "packageManager": "yarn@3.2.0"
 }
