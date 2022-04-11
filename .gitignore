@@ -13,4 +13,3 @@ web/types/graphql.d.ts
 api/types/graphql.d.ts
 web/public/mockServiceWorker.js
 .env.bk
-
