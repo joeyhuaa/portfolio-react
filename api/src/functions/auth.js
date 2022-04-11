@@ -145,7 +145,9 @@ export const handler = async (event, context) => {
       HttpOnly: true,
       Path: '/',
       SameSite: 'Strict',
-      Secure: process.env.NODE_ENV !== 'development' ? true : false,
+      Secure: true,
+      Domain: 'boiler.netlify.app',
+      // Secure: process.env.NODE_ENV !== 'development' ? true : false,
 
       // If you need to allow other domains (besides the api side) access to
       // the dbAuth session cookie:
