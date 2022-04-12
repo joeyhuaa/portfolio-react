@@ -18,6 +18,7 @@ const Routes = () => {
         </Set>
       </Private>
       <Set wrap={BlogLayout}>
+        <Route path="/travelor" page={TravelorPage} name="travelor" />
         <Route path="/contact" page={ContactPage} name="contact" />
         <Route path="/article/{id:Int}" page={ArticlePage} name="article" />
         <Route path="/about" page={AboutPage} name="about" />
