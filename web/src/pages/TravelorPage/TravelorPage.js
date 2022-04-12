@@ -5,6 +5,12 @@ const TravelorPage = () => {
     console.info(data)
   }
 
+const onSubmit = (data) => {
+  fetch('https://api.openweathermap.org/data/2.5/weather?zip=66952,us&appid=WEATHER_KEY')
+    .then(response => response.json())
+    .then(json => console.info(json))
+}
+
   return (
     <Form onSubmit={onSubmit} style={{fontSize: '2rem'}}>
       <TextField
