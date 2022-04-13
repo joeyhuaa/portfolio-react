@@ -1,26 +1,27 @@
 import { Form, TextField, Submit } from '@redwoodjs/forms'
+import { useState } from 'react'
+import WeatherCell from 'src/components/WeatherCell'
 
 const TravelorPage = () => {
+  const [zip, setZip] = useState()
+
   const onSubmit = (data) => {
-    console.info(data)
+    setZip(data.zip)
   }
 
-const onSubmit = (data) => {
-  fetch('https://api.openweathermap.org/data/2.5/weather?zip=66952,us&appid=WEATHER_KEY')
-    .then(response => response.json())
-    .then(json => console.info(json))
-}
-
   return (
-    <Form onSubmit={onSubmit} style={{fontSize: '2rem'}}>
-      <TextField
-        name="zip"
-        placeholder="Zip code"
-        maxLength="5"
-        validation={{ required: true, pattern: /^\d{5}$/ }}
-      />
-      <Submit>Go</Submit>
-    </Form>
+    <>
+      <Form onSubmit={onSubmit} style={{ fontSize: '2rem' }}>
+        <TextField
+          name="zip"
+          placeholder="Zip code"
+          maxLength="5"
+          validation={{ required: true, pattern: /^\d{5}$/ }}
+        />
+        <Submit>Go</Submit>
+      </Form>
+      {zip && <WeatherCell zip={zip} />}
+    </>
   )
 }
 
