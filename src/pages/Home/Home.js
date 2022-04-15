@@ -2,12 +2,12 @@ import './Home.css';
 
 
 // import sliceTextureLarge from 'assets/slice-app-large.jpg';
-// import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
+import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 // import sliceTexture from 'assets/slice-app.jpg';
-// import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
-// import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-// import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
-// import { ProjectSummary } from 'pages/Home/ProjectSummary';
+import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
+import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+import { ProjectSummary } from 'pages/Home/ProjectSummary';
 
 import { Profile } from 'pages/Home/Profile';
 import { Footer } from 'components/Footer';
@@ -37,7 +37,7 @@ export const Home = () => {
   // const projectThree = useRef();
   
   useEffect(() => {
-    const revealSections = [intro, details,]; // projectOne, projectTwo, projectThree, ];
+    const revealSections = [intro, projectOne, details,]; // projectTwo, projectThree, ];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -152,7 +152,7 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
-      {/* <ProjectSummary
+      <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
@@ -172,7 +172,7 @@ export const Home = () => {
             },
           ],
         }}
-      /> */}
+      />
       {/* <ProjectSummary
         id="project-2"
         alternate
