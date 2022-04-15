@@ -1,6 +1,5 @@
 import './ProjectSummary.css';
 
-import { ReactComponent as KatakanaProject } from 'assets/katakana-project.svg';
 import { Button } from 'components/Button';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
@@ -11,7 +10,7 @@ import { Text } from 'components/Text';
 import { useTheme } from 'components/ThemeProvider';
 import { useWindowSize } from 'hooks';
 import { Transition } from 'react-transition-group';
-import { cssProps, media } from 'utils/style';
+import { media } from 'utils/style';
 import { isVisible, reflow } from 'utils/transition';
 
 export const ProjectSummary = ({
@@ -31,7 +30,7 @@ export const ProjectSummary = ({
   const { width } = useWindowSize();
   const titleId = `${id}-title`;
   const isMobile = width <= media.tablet;
-  const svgOpacity = theme.themeId === 'light' ? 0.7 : 1;
+  // const svgOpacity = theme.themeId === 'light' ? 0.7 : 1;
   const indexText = index < 10 ? `0${index}` : index;
   const phoneSizes = `(max-width: ${media.tablet}px) 30vw, 20vw`;
   const laptopSizes = `(max-width: ${media.tablet}px) 80vw, 40vw`;
