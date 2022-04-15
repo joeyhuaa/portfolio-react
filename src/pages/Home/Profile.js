@@ -1,6 +1,6 @@
 import './Profile.css';
 
-import { ReactComponent as KatakanaProfile } from 'assets/katakana-profile.svg';
+// import { ReactComponent as KatakanaProfile } from 'assets/katakana-profile.svg';
 import ProfileImgLarge from 'assets/profile-large.jpg';
 import ProfileImgPlaceholder from 'assets/profile-placeholder.jpg';
 import ProfileImg from 'assets/profile.jpg';
@@ -85,7 +85,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me right befor hiking the Sawtooth Mountains in Idaho"
                 />
-                <KatakanaProfile className="profile__svg" data-status={status} />
+                {/* <KatakanaProfile className="profile__svg" data-status={status} /> */}
               </div>
             </div>
           </div>
