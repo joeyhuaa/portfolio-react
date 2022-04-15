@@ -73,13 +73,6 @@ export const ProjectSummary = ({
     <div className="project-summary__preview">
       {model.type === 'laptop' && (
         <>
-          <KatakanaProject
-            className="project-summary__svg"
-            style={cssProps({ opacity: svgOpacity })}
-            data-device="laptop"
-            data-status={status}
-            data-light={theme.themeId === 'light'}
-          />
           <Model
             className="project-summary__model"
             data-device="laptop"
@@ -101,13 +94,6 @@ export const ProjectSummary = ({
       )}
       {model.type === 'phone' && (
         <>
-          <KatakanaProject
-            data-status={status}
-            data-light={theme.themeId === 'light'}
-            style={cssProps({ opacity: svgOpacity })}
-            className="project-summary__svg"
-            data-device="phone"
-          />
           <Model
             className="project-summary__model"
             data-device="phone"

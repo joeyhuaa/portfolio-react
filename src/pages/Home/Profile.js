@@ -85,7 +85,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me right befor hiking the Sawtooth Mountains in Idaho"
                 />
-                {/* <KatakanaProfile className="profile__svg" data-status={status} /> */}
               </div>
             </div>
           </div>
