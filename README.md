@@ -1,121 +1,70 @@
-# README
+# Getting Started with Create React App
 
-Welcome to [RedwoodJS](https://redwoodjs.com)!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> **Prerequisites**
->
-> - Redwood requires [Node.js](https://nodejs.org/en/) (>=14.19.x <=16.x) and [Yarn](https://yarnpkg.com/) (>=1.15)
-> - Are you on Windows? For best results, follow our [Windows development setup](https://redwoodjs.com/docs/how-to/windows-development-setup) guide
+## Available Scripts
 
-Start by installing dependencies:
+In the project directory, you can run:
 
-```
-yarn install
-```
+### `yarn start`
 
-Then change into that directory and start the development server:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-```
-cd my-redwood-project
-yarn redwood dev
-```
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Your browser should automatically open to http://localhost:8910 where you'll see the Welcome Page, which links out to a ton of great resources.
+### `yarn test`
 
-> **The Redwood CLI**
->
-> Congratulations on running your first Redwood CLI command!
-> From dev to deploy, the CLI is with you the whole way.
-> And there's quite a few commands at your disposal:
-> ```
-> yarn redwood --help
-> ```
-> For all the details, see the [CLI reference](https://redwoodjs.com/docs/cli-commands).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Prisma and the database
+### `yarn build`
 
-Redwood wouldn't be a full-stack framework without a database. It all starts with the schema. Open the [`schema.prisma`](api/db/schema.prisma) file in `api/db` and replace the `UserExample` model with the following `Post` model:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-model Post {
-  id        Int      @id @default(autoincrement())
-  title     String
-  body      String
-  createdAt DateTime @default(now())
-}
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Redwood uses [Prisma](https://www.prisma.io/), a next-gen Node.js and TypeScript ORM, to talk to the database. Prisma's schema offers a declarative way of defining your app's data models. And Prisma [Migrate](https://www.prisma.io/migrate) uses that schema to make database migrations hassle-free:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
-yarn rw prisma migrate dev
+### `yarn eject`
 
-# ...
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-? Enter a name for the new migration: › create posts
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-> `rw` is short for `redwood`
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You'll be prompted for the name of your migration. `create posts` will do.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Now let's generate everything we need to perform all the CRUD (Create, Retrieve, Update, Delete) actions on our `Post` model:
+## Learn More
 
-```
-yarn redwood g scaffold post
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Navigate to http://localhost:8910/posts/new, fill in the title and body, and click "Save":
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Did we just create a post in the database? Yup! With `yarn rw g scaffold <model>`, Redwood created all the pages, components, and services necessary to perform all CRUD actions on our posts table.
+### Code Splitting
 
-## Frontend first with Storybook
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Don't know what your data models look like?
-That's more than ok—Redwood integrates Storybook so that you can work on design without worrying about data.
-Mockup, build, and verify your React components, even in complete isolation from the backend:
+### Analyzing the Bundle Size
 
-```
-yarn rw storybook
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Before you start, see if the CLI's `setup ui` command has your favorite styling library:
+### Making a Progressive Web App
 
-```
-yarn rw setup ui --help
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Testing with Jest
+### Advanced Configuration
 
-It'd be hard to scale from side project to startup without a few tests.
-Redwood fully integrates Jest with the front and the backends and makes it easy to keep your whole app covered by generating test files with all your components and services:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-```
-yarn rw test
-```
+### Deployment
 
-To make the integration even more seamless, Redwood augments Jest with database [scenarios](https://redwoodjs.com/docs/testing.md#scenarios)  and [GraphQL mocking](https://redwoodjs.com/docs/testing.md#mocking-graphql-calls).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Ship it
+### `yarn build` fails to minify
 
-Redwood is designed for both serverless deploy targets like Netlify and Vercel and serverful deploy targets like Render and AWS:
-
-```
-yarn rw g setup deploy --help
-```
-
-Don't go live without auth!
-Lock down your front and backends with Redwood's built-in, database-backed authentication system ([dbAuth](https://redwoodjs.com/docs/authentication#self-hosted-auth-installation-and-setup)), or integrate with nearly a dozen third party auth providers:
-
-```
-yarn rw g setup auth --help
-```
-
-## Next Steps
-
-The best way to learn Redwood is by going through the comprehensive [tutorial](https://redwoodjs.com/docs/tutorial/foreword) and joining the community (via the [Discourse forum](https://community.redwoodjs.com) or the [Discord server](https://discord.gg/redwoodjs)).
-
-## Quick Links
-
-- Stay updated: read [Forum announcements](https://community.redwoodjs.com/c/announcements/5), follow us on [Twitter](https://twitter.com/redwoodjs), and subscribe to the [newsletter](https://redwoodjs.com/newsletter)
-- [Learn how to contribute](https://redwoodjs.com/docs/contributing)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
