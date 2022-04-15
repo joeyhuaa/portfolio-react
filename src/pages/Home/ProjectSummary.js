@@ -1,4 +1,6 @@
 import './ProjectSummary.css';
+// import { useTheme } from 'components/ThemeProvider';
+
 
 import { Button } from 'components/Button';
 import { Divider } from 'components/Divider';
@@ -7,7 +9,6 @@ import { Model } from 'components/Model/Model';
 import { deviceModels } from 'components/Model/deviceModels';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
-import { useTheme } from 'components/ThemeProvider';
 import { useWindowSize } from 'hooks';
 import { Transition } from 'react-transition-group';
 import { media } from 'utils/style';
@@ -26,11 +27,11 @@ export const ProjectSummary = ({
   alternate,
   ...rest
 }) => {
-  const theme = useTheme();
+  // const theme = useTheme();
+  // const svgOpacity = theme.themeId === 'light' ? 0.7 : 1;
   const { width } = useWindowSize();
   const titleId = `${id}-title`;
   const isMobile = width <= media.tablet;
-  // const svgOpacity = theme.themeId === 'light' ? 0.7 : 1;
   const indexText = index < 10 ? `0${index}` : index;
   const phoneSizes = `(max-width: ${media.tablet}px) 30vw, 20vw`;
   const laptopSizes = `(max-width: ${media.tablet}px) 80vw, 40vw`;

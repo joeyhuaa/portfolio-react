@@ -173,54 +173,6 @@ export const Home = () => {
           ],
         }}
       />
-      {/* <ProjectSummary
-        id="project-2"
-        alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View Website"
-        buttonLink="https://real-estate-app-dun.vercel.app"
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              src: gamestackTexture,
-              srcSet: `${gamestackTexture} 254w, ${gamestackTextureLarge} 508w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              src: gamestackTexture2,
-              srcSet: `${gamestackTexture2} 254w, ${gamestackTexture2Large} 508w`,
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
-      /> */}
-      {/* <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View Project"
-        buttonLink="/projects/slice"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              src: sliceTexture,
-              srcSet: `${sliceTexture} 980w, ${sliceTextureLarge} 1376w`,
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      /> */}
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

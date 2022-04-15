@@ -194,7 +194,7 @@ const DisplacementSphere = props => {
   }, [isInViewport, prefersReducedMotion]);
 
   return (
-    <Transition appear in onEnter={reflow} timeout={3000}>
+    <Transition appear in onEnter={reflow} timeout={300}>
       {status => (
         <canvas
           aria-hidden
