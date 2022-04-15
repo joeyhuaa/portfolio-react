@@ -17,13 +17,14 @@ import { msToNum } from 'utils/style';
 import { reflow } from 'utils/transition';
 
 const Home = lazy(() => import('pages/Home'));
-// const Contact = lazy(() => import('pages/Contact'));
+const Contact = lazy(() => import('pages/Contact'));
+const Page404 = lazy(() => import('pages/404'));
+// const Uses = lazy(() => import('pages/Uses'));
 // const ProjectSPR = lazy(() => import('pages/SmartSparrow'));
 // const ProjectSlice = lazy(() => import('pages/Slice'));
 // const ProjectVolkihar = lazy(() => import('pages/VolkiharKnight'));
 // // const Articles = lazy(() => import('pages/Articles'));
-const Page404 = lazy(() => import('pages/404'));
-// const Uses = lazy(() => import('pages/Uses'));
+
 
 export const AppContext = createContext();
 export const TransitionContext = createContext();
@@ -86,14 +87,14 @@ const AppRoutes = () => {
                 <Suspense fallback={<Fragment />}>
                   <Routes location={location} key={pathname}>
                     <Route path="/" element={<Home />} />
-                    {/* <Route path="/contact" element={<Contact />} />
-                    <Route path="/projects/smart-sparrow" element={<ProjectSPR />} />
+                    <Route path="/contact" element={<Contact />} />
+                    {/* <Route path="/projects/smart-sparrow" element={<ProjectSPR />} />
                     <Route path="/projects/slice" element={<ProjectSlice />} />
                     <Route
                       path="/projects/volkihar-knight"
                       element={<ProjectVolkihar />}
                     />
-                    <Route path="/articles" element={<Articles} /> />
+                    <Route path="/articles" element={<Articles />} />
                     <Route path="/uses" element={<Uses />} /> */}
                     <Route path="*" element={<Page404 />} />
                   </Routes>

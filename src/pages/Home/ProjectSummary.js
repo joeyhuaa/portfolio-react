@@ -1,6 +1,7 @@
 import './ProjectSummary.css';
+// import { useTheme } from 'components/ThemeProvider';
 
-import { ReactComponent as KatakanaProject } from 'assets/katakana-project.svg';
+
 import { Button } from 'components/Button';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
@@ -8,10 +9,9 @@ import { Model } from 'components/Model/Model';
 import { deviceModels } from 'components/Model/deviceModels';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
-import { useTheme } from 'components/ThemeProvider';
 import { useWindowSize } from 'hooks';
 import { Transition } from 'react-transition-group';
-import { cssProps, media } from 'utils/style';
+import { media } from 'utils/style';
 import { isVisible, reflow } from 'utils/transition';
 
 export const ProjectSummary = ({
@@ -27,11 +27,11 @@ export const ProjectSummary = ({
   alternate,
   ...rest
 }) => {
-  const theme = useTheme();
+  // const theme = useTheme();
+  // const svgOpacity = theme.themeId === 'light' ? 0.7 : 1;
   const { width } = useWindowSize();
   const titleId = `${id}-title`;
   const isMobile = width <= media.tablet;
-  const svgOpacity = theme.themeId === 'light' ? 0.7 : 1;
   const indexText = index < 10 ? `0${index}` : index;
   const phoneSizes = `(max-width: ${media.tablet}px) 30vw, 20vw`;
   const laptopSizes = `(max-width: ${media.tablet}px) 80vw, 40vw`;
@@ -73,13 +73,6 @@ export const ProjectSummary = ({
     <div className="project-summary__preview">
       {model.type === 'laptop' && (
         <>
-          <KatakanaProject
-            className="project-summary__svg"
-            style={cssProps({ opacity: svgOpacity })}
-            data-device="laptop"
-            data-status={status}
-            data-light={theme.themeId === 'light'}
-          />
           <Model
             className="project-summary__model"
             data-device="laptop"
@@ -101,13 +94,6 @@ export const ProjectSummary = ({
       )}
       {model.type === 'phone' && (
         <>
-          <KatakanaProject
-            data-status={status}
-            data-light={theme.themeId === 'light'}
-            style={cssProps({ opacity: svgOpacity })}
-            className="project-summary__svg"
-            data-device="phone"
-          />
           <Model
             className="project-summary__model"
             data-device="phone"

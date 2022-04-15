@@ -63,7 +63,7 @@ export const Contact = () => {
       try {
         setSending(true);
 
-        const response = await fetch('https://api.hamishw.com/message', {
+        const response = await fetch('https://api.paulomartin.com/message', {
           method: 'POST',
           mode: 'cors',
           headers: {
