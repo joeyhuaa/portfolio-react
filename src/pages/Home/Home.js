@@ -137,11 +137,10 @@ export const Home = () => {
   return (
     <div className="home">
       <Helmet>
-        <title>Paulo Martin | Designer + Developer</title>
+        <title>Joey Hua | Designer + Developer</title>
         <meta
           name="description"
-          content="Portfolio of Paulo Martin – a digital designer working on web &amp; mobile
-          apps with a focus on motion and user experience design."
+          content="Portfolio of Joey Hua"
         />
         <link rel="prefetch" href={iphone11} as="fetch" crossorigin="" />
         <link rel="prefetch" href={macbookPro} as="fetch" crossorigin="" />

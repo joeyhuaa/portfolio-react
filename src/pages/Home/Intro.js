@@ -70,7 +70,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
             )}
             <header className="intro__text">
               <h1 className="intro__name" data-status={status} id={titleId}>
-                <DecoderText text="Paulo Martin" start={!prerender} delay={300} />
+                <DecoderText text="Joey Hua" start={!prerender} delay={300} />
               </h1>
               <Heading level={0} as="h2" className="intro__title">
                 <VisuallyHidden className="intro__title-label">{`Designer + ${introLabel}`}</VisuallyHidden>
@@ -80,7 +80,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                     data-status={status}
                     style={cssProps({ delay: tokens.base.durationXS })}
                   >
-                    Designer
+                    Developer
                   </span>
                   <span className="intro__title-line" data-status={status} />
                 </span>
